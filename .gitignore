@@ -2,6 +2,8 @@ docs/*/_build
 docs/_build
 libs/*
 _ATTIC
+_LOCAL
+
 
 # Python / Jython
 
