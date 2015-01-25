@@ -1,0 +1,43 @@
+CR004
+=====
+:Date: 2015-01-17-14h-15h
+:Type: XXX
+:Lieu: Paris-Batemis
+:PartiesPrenantes: ABI, HIS, KWG, TNA
+:Organisateur: ABI
+:Rapporteur: KWG
+:Presents: ABI, HSI, KWG, TNA
+:Objectifs: XXX
+
+
+
+
+
+#. Un badgeur ne peut pas rentrer que dans une zone contigüe.
+#. De même, il ne peut pas badger en sortie d'un bâtiment, que s’il y est entré. 
+#. S’il cherche à violer ces règles, une alerte est déclenchée, et un incident est enregistré.
+#. Un point d’accès peut être à l'interface entre deux bâtiments.
+#. Ce peut être dans un sens ou dans les deux sens.
+#. L'accès doit alors être conforme à la logique d'autorisation de chacun des deux bâtiments.
+#. Un point d'accès est identifié par la zone dans lequel il est et un numéro de porte.
+#. Ce numéro distingue les points d’accès à une même zone.
+#. L’identifiant du point d’accès est marqué physiquement sur le matériel installé.
+#. Pour les points interfaces, c’est un peu différent.
+#. Le numéro est associé à un des deux bâtiments et suivi de la lettre I.
+#. Les zones sont identifiées par des chaines de caractères.
+#. Le superviseur a pour rôle de gérer l'ensemble de la sécurité en définissant son fonctionnement.
+#. Il décrit donc l'ensemble des zones et des points de contrôles.
+#. Il défini également les différents groupes de personnes et établit les autorisations associées.
+#. Les personnes peuvent être enregistrées dans le système par un administrateur de groupe.
+#. Elles peuvent appartenir à divers groupes
+#. Sur certains sites complexes, il y a jusqu'à 30000 personnes et 1000 groupes.
+#. La taille plus classique est de l’ordre de 1000 personnes et 20 groupes. 
+#. Ces administrateurs de groupe, autorisé par le superviseur, assurent la gestion des groupes.
+#. Dans le cas d’un campus c’est par exemple le rôle du secrétariat d'un laboratoire 
+#. Le ou les gardiens surveille(nt) le fonctionnement continu du système.
+#. Ils enregistrent les alarmes en les commentant, les traitent.
+#. Selon les cas ils alertent les responsables de groupes, le superviseur ou d’autre services.
+#. Ils font appel aux services compétents lors d'incidents techniques ou de sécurité prévus.
+#. Sur certains sites Batemis installe des caméras de surveillance autour des points d’accès.
+#. Dans ce cas des traces vidéo des événements sont conservées.
+#. Ils ont alors la possibilité d'en provoquer la sauvegarde en cas d'incident.
