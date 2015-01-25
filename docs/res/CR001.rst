@@ -1,0 +1,69 @@
+CR001
+=====
+:Date: 2015-01-02-8h-10h
+:Type: Reunion
+:Lieu: Grenoble-Batemis
+:PartiesPrenantes: ABI, JDR, KWG, MPA, PSO, TNA, ZSH 
+:Organisateur: ABI
+:Rapporteur: KWG
+:Presents: ABI, JDR, KWG, MPA, PSO, TNA, ZSH
+:Objectifs: Présentation des parties prenantes, grands objectifs
+
+#. En ce début de projet, les parties prenantes sont les suivantes :
+#. _ Ahmed BLASI (ABI) – IMAG, Grenoble
+#. _ Jean-Claude DUFOUR (JDR) - Batemis, Grenoble
+#. _ Ken WONG (KWG) – IMAG, Grenoble
+#. _ Mireille PALMA (MPA) – Batemis, Lisbonne
+#. _ Paolo SANTIAGO SANCHEZ (PSO) – Batemis, Caracas
+#. _ Hong SHI (HSI) – Batemis, Zurich
+#. _ Tararya NARAMANATA (TNA) – Batemis, Nantes
+#. _ Zork SWISH (ZSH) – Batemis, Autriche
+#. _
+#. Le présent projet a été baptisé CyberBatiment.
+#. Ce projet se place dans le cadre des nouvelles normes de sécurité suite à des attentats.
+#. On s'intéresse plus particulièrement à la norme EAN1225.
+#. De multiples organismes pourront être concernés à un moment donné par cette norme.
+#. Ces derniers risquent de devoir sécuriser de manière temporaire ou permanente leurs sites.
+#. Il s'agit d'une opportunité commerciale pour les sociétés de sécurité comme Batemis.
+#. La société Batemis est spécialisée dans les systèmes de contrôle d’accès.
+#. Batemis ne produit pas les équipements de sécurité, mais les assemblent et les délivrent.
+#. Jusqu’à présent les logiciels développés l’étaient de manière ad-hoc.
+#. Batemis désire désormais se doter d’un logiciel que l’on appelle CyberBatiment.
+#. Ce logiciel doit pouvoir être utilisé sur différents types de sites.
+#. Par exemple des lieux de cultes, des usines, des sites sportifs, des centres commerciaux, etc.
+#. Jusqu'à présent, "configurer" un site nécessitait l’intervention de nombreux techniciens.
+#. Tout se faisait au cas par cas, y compris le développement de logiciels ad-hoc.
+#. Ce modèle n’est plus viable vu la croissance exponentielle de Batemis et la norme EAN1225.
+#. Batemis doit généraliser son offre pour pouvoir sécuriser plus de sites.
+#. L'idée est de donner plus de contrôle aux organismes clients pour gérer leur sécurité.
+#. L'équipe logicielle de Batemis est très limitée actuellement.
+#. Le développement de CyberBatiment a donc été confié à l'IMAG.
+#. Un certain nombre de contraintes ont été déjà mentionnées.
+#. La partie du serveur de contrôle  devra être développé impérativement en Objective-C.
+#. Les autres parties devront être développées en Python 2.7.
+#. La base de données résidant sur le serveur d'application devra être Oracle.
+#. Django sera utilisé pour les aspects web.
+#. Oracle est imposé par des accords commerciaux entre Oracle et Batemis.
+#. Le choix de Python/Django est lié au fait que Batemis utilise ces technologies en interne.
+#. Objective-C est le choix standard dans ce domaine pour la programmation des contrôleurs.
+#. En ce qui concerne le matériel de sécurité, Batemis a passé un accord avec Bissis.
+#. Bissis est un constructeur proposant du matériel extrêmement innovant.
+#. En particulier Batemis a décidé de se baser des "bissas" pour toutes les offres  EAN1225.
+#. Batemis et Bissis ont passé un accord pour mettre sur le marché des bissas le plus rapidement possible.
+#. Bissis sera donc partie prenante pour le projet et fournira le matériel.
+#. Une prochaine réunion aura lieu dans le locaux de Bissis à Lisbonne pour étudier les "bissas".
+#. Différents organismes ont déjà contacté Batemis pour la mise en place de CyberBatiment.
+#. La société Competis désire sécuriser le site de paraguana pour la compétition WAT 2015.
+#. Les mosquées de Berlin devraient également être sécurisées début 2016.
+#. Plusieurs universités espagnoles voudraient également migrer vers EAN1225 en 2016.
+#. Les commerciaux de Batemis prévoient une augmentation exponentielles des demandes au prochain trimestre.
+#. CyberBatiment doit donc être général, configurable et supporter différents types de sites.
+#. Batemis a décidé d'imposer l'utilisation d'UML pour ce projet (et d'autres projets).
+#. Plus particulièrement un accord a été passé avec ModelioSoft pour des licences Modelio.
+#. Dans un premier temps une spécification de CyberBatiment devra être faite.
+#. Batemis insiste sur le rôle essentiel de cette spécification.
+#. Sans celle-ci le rôle de l'IMAG dans le projet pourra être remis en cause.
+#. Pour cette étude il a été décidé de prendre le site de paraguana a titre d'illustration.
+#. Il est entendu par toutes les parties prenantes qu'il ne s'agira que d'un exemple.
+#. La prochaine réunion aura de nouveau lieu à Paraguana en présence de Competis.
+#. L'objectif est de se rendre sur le site en temps que cas d'étude.

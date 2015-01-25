@@ -1,0 +1,158 @@
+CR002
+=====
+:Date: 2015-01-05-08h-22h
+:Type: Reunion
+:Lieu: Paraguana-Competis
+:PartiesPrenantes: ABI, JDR, PSO, AGO
+:Organisateur: ABI
+:Rapporteur: KWG
+:Presents: ABI, JDR, PSO, AGO
+:Objectifs: Paraguana/WAT 2015 comme cas d'étude
+
+#. Nouvel intervenant:
+#. _ Apito GUARACARUMBO (AGO) - Competis, San Juan de Los Morros
+#. La réunion a eu lieu sur le site de Paraguana, guidé par AGO de Competis.
+#. Le site n'est actuellement pas équipé.
+#. Il devra l'être pour la compétition WAT 2015 qui aura lieu en novembre 2015.
+#. Grâce aux bissas, cette installation temporaire est considérée comme viable.
+#. Batemis et Bissis seront les seuls à pouvoir équiper des sites temporaires conformes à EAN1225.
+#. Un plan des installation a été fourni par Competis.
+#. A partir de la visite du site et de ce plan, un plan sécurité a été établi.
+#. Les différents points d'accès et le nombre des bissas a été déterminé par Batemis.
+#. De même pour le positionnement des caméras et de la salle de contrôle.
+
+.. figure:: media/paraguana.jpg
+
+    Figure 1: Paraguana, un exemple de site devant être géré par CyberBatiment
+
+#. Les différentes zones du site ont été représentées sur le plan sécurité.
+#. Par contre les bâtiments, installations et autres espaces non sécurisés n'y sont pas.
+#. De même pour les entrées de véhicules et autres entrées gérées par des gardiens.
+#. Les différents types de bissas ont été choisi en fonction du niveau de sécurité à atteindre.
+#. Une présentation des bissas chez Bissis est à prévoir.
+#. Différents groupes de badgeurs devront être définis.
+#. Par exemple les "spectateurs" auront des badges courts (temporaires).
+#. Ils ne pourront accéder qu'à la zone du stade et à la tribune correspondant à leur billet.
+#. Cette autorisation n'est valide que pour la période correspondant à l'épreuve choisie.
+#. Un exemple de billet a été fourni par Competis et reproduit ci-dessous.
+
+.. figure:: media/billet.jpg
+    :align: center
+
+    Figure 2: Exemple de billet faisant office de badge court grâce au QR code
+
+#. Pendant WAT 2015 les "sportifs" accéderont au village sportif, au restaurant, et à leur bâtiment.
+#. Ils pourront aussi aller en salle de presse et à l'administration de 8h à 17h.
+#. Par contre l'accès au sous sol sportif et à l'arène ne leur sera pas autorisé tout le temps.
+#. Ce sera uniquement le cas si une épreuve les concernent.
+#. Par exemple si une équipe perd est éliminée via un match, elle ne pourra plus participer à la suite.
+#. Un administrateur de groupe doit donc pouvoir facilement changer les autorisations d'un groupe.
+#. Différents autres groupes de badgeurs ont été évoqués dans ce cas d'étude.
+#. Par exemple les administrateurs et les journalistes ont chacun leurs zones.
+#. Les gardiens, eux, peuvent aller dans toutes les zones, y compris évidemment dans la salle de contrôle.
+#. Ils peuvent par ailleurs faire passer une personne (une seule) avec leur badge.
+#. C'est utile par exemple pour les V.I.Ps qui vont dans la tribune V.I.Ps. ou prestige.
+#. C'est utile également lorsqu'ils doivent débloquer quelqu'un suite à un incident.
+#. Même si différents groupes de badgeurs ont été identifiés, d'autres pourraient apparaître.
+#. Il doit être possible pour un superviseur de créer de nouveaux groupes.
+#. Par contre chaque groupe devra être administré par un administrateur.
+#. Par exemple les administrateurs pour les sportifs pourront créer des badges longs pour eux.
+#. Ils devront aussi pouvoir changer leurs autorisations en fonction des résultats sportifs, etc.
+#. Les administrateurs de presse s'occuperont des badges (courts ou longs) pour les journalistes, etc.
+#. L'émission de badges courts pour les spectateurs par contre seront gérés de manière automatique.
+#. Dans une compétition telle que WAT 2015 on attend plus de 200 000 spectateurs.
+#. CyberCompetition (par Competis) sera en charge de l'émission des badges courts.
+#. Pour les spectateurs ils prendront la forme de QR codes sur les billets vendus (cf Fig. 2)
+#. Le fichier ci-dessous a été fourni par Competis.
+
+.. figure:: media/import.jpg
+    :align: center
+
+    Figure 3: Exemple de fichier généré par Competis
+
+#. Seules certaines informations seront nécessaires dans le cadre de CyberBatiment.
+#. Il a été convenu qu'un format XML devrait être défini dans ce cadre.
+#. Des logiciels externes devront pouvoir ajouter des badges courts via un web service sécurisé.
+#. Competis écrira un wrapper pour appeler ce service une fois celui-ci défini.
+#. La visite sur le site de Paraguana a été très instructive.
+#. Il a cependant été jugé souhaitable de considérer un autre type de site.
+#. Le risque soulevé par Batemis est de produire encore une solution ad-hoc.
+#. CyberBatiment doit être aussi général et flexible que possible.
+
+
+
+
+
+
+
+
+...............................................................................
+
+
+
+
+
+#. Nouvel intervenant:
+#. _ Apito GUARACARUMBO (AGO) - Competis, San Juan de Los Morros
+#. La réunion a eu lieu sur le site de Paraguana, guidé par AGO de Competis.
+#. Le site n'est actellement pas équipé.
+#. Il devra l'être pour la compétition WAT 2015 qui aura lieu en novembre 2015.
+#. Grace aux bissas, cette installation temporaire est considérée comme viable.
+#. Batemis et Bissis seront les seuls à pouvoir équiper des sites temporairement pour EAN1225.
+#. Un plan des installation a été fourni par Competis.
+#. A partir de la visite du site et de ce plan, un plan sécurité a été établi.
+#. Les differents points d'accès et le nombre des bissas a été déterminé par Batemis.
+#. De même pour le positionnement des caméras et de la salle de contrôle.
+
+.. figure:: media/site.jpg
+
+    Figure 2: *"Paraguana"*, un exemple de site devant être géré par |CyberCompetition|
+
+#. Les différentes zones du site ont étées représentées sur le plan sécurité.
+#. Par contre les batiments, installations et autres espaces non sécurisés n'y sont pas.
+#. De même pour les entrées de vèhicules et autres entrées gérées par des gardiens.
+#. Les différents types de bissas ont été choisi en fonction du niveau de sécurité à atteindre.
+#. Une présentation des bissas chez Bissis est à prévoir.
+#. Selon Competis differents groupes de badgeurs devront pouvoir être définis.
+#. Les spectateurs auront des badges courts (temporaires).
+#. Ils ne pourront accéder qu'à la zone du stade et à la tribune correspondant à leur billet.
+#. Cette autorisation n'est valide que pour la période correspondant à l'épreuve choisie.
+#. Les sportifs ne pouro
+
+
+
+
+
+
+
+
+
+
+#. Les utilisateurs ont des statuts divers.
+#. Ils peuvent accéder aux différentes zones selon des règles d’accès différentes.
+#. Une part importante de la configuration d’un site consiste à définir ces règles.
+#. Ces règles sont basées sur le fait qu’il y a différents types d’utilisateurs.
+#. Par exemple à l’IMAG la population la plus importante est formée d’étudiants.
+#. Le reste est formé de personnels administratifs, de techniciens, d’enseignants et de chercheurs.
+#. Selon leur droit, le calendrier, ils ont accès à différentes zones.
+#. Par exemple les bâtiments d’enseignement sont en accès libre entre 7h et 19h30 les jours ouvrés.
+#. Le reste du temps ces bâtiments sont en accès contrôlé.
+#. Les personnels administratifs, les techniciens accèdent selon des règles diverses.
+#. Cela dépend des heures et des groupes de bâtiments.
+#. Dans le cadre des bâtiments de l’IMAG les badges d’accès sont des cartes magnétiques.
+#. Sur ces cartes l’identifiant du badge est pré-enregistré.
+#. Dans ces cartes l’information n’est pas modifiable.
+#. Dans le cas général l'ensemble du site dont les accès sont contrôlés est découpé en zones.
+#. Ces zones peuvent être imbriquées.
+#. C’est le cas par exemple dans les sites correspondant à installations industrielles.
+#. Les personnes autorisées à rentrer doivent passer un premier contrôle pour rentrer dans l’installation.
+#. Ensuite plus les zones sont sensibles plus il faudra des droits et plus il y aura des points-de contrôle.
+#. Concrètement il y a différents types de zones.
+#. Ce peut être un bâtiment, un étage, une salle particulière, un parking, un terrain de sécurité, etc.
+#. Chaque zone est gérée suivant ses propres règles d'accès et correspond à une unité d’accès homogène.
+#. Autrement dit un individu ayant accès à une zone peut se déplacer dans tout l’espace correspondant.
+#. Les règles sont établies par le superviseur qui administre l'ensemble des autorisations des zones.
+#. La plupart des zones ont un seul point d’accès car cela simplifie toujours le contrôle.
+#. Mais certaines zones peuvent en avoir plusieurs.
+#. Certains points d’accès sont surveillés par des vigiles.
+#. C’est assez souvent le cas des entrées d’usine ou d’installations sportives recevant du publique.

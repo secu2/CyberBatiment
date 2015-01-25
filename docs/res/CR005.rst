@@ -1,0 +1,41 @@
+CR005
+=====
+:Date: 2015-01-18-16h-17h
+:Type: XXX
+:Lieu: Paris-Batemis
+:PartiesPrenantes: ABI, HSI, KWG, MPA, PSO
+:Organisateur: KWG
+:Presents: ABI, HSI, KWG, MPA
+:Objectifs: XXX
+
+#. Les utilisateurs sont des personnes connues au minimum par leur nom et leur prénom.
+#. Ils sont identifiés par un numéro de code lié au système d'accès.
+#. Un badge comporte un numéro qui l'identifie.
+#. On enregistre lorsqu'on le donne à quelqu'un, le propriétaire et la date-heure de remise.
+#. Les autorisations évoluent dans le temps avec les groupes d'appartenance.
+#. Il y a des annulations d'autorisations pendant les congés par exemple.
+#. En fait tout dépend du calendrier associé au groupe.
+#. Une autorisation d'accès est donnée pour un groupe de personnes à un bâtiment.
+#. Cela peut se faire sur des périodes de plusieurs semaines consécutives.
+#. Les horaires d’ouverture des bâtiments dépendent des statuts des personnes.
+#. Il y a un régime pour les jours ouvrés et un autre pour les jours fériés.
+#. C’est la notion de période.
+#. Les jours ouvrés et fériés sont définis pour tous les bâtiments.
+#. Il peut y avoir des périodes de fermeture complète des bâtiments.
+#. Chaque personne est rattachée à un ou plusieurs groupes.
+#. Son droit d'accès étant alors la configuration la plus souple.
+#. Il s’agit de l’union des autorisations des groupes auxquels elle appartient.
+#. Idéalement les groupes devraient pouvoir être imbriqués.
+#. Par exemple on devrait pouvoir définir des droits généraux pour le groupe étudiants.
+#. Puis définir des groupes spécialisés come étudiants de master, puis master sigal.
+#. Idéalement on devrait pouvoir leur donner accès à une salle particulière à une date donnée.
+#. Les portes peuvent être dans divers états mais sont indissociables des point d'accès.
+#. Les états sont par exemple actif, en panne, en attente, bloquée, débloquée, ouverte, fermée.
+#. Dans le cas de systèmes à lecteurs et portes, les conventions suivantes sont prises.
+#. Chaque lecteur est identifié par le point d'accès qu'il dessert, suivi d'un rôle.
+#. Le rôle est E pour externe et I pour interne.
+#. Les droits de la personne sont liés à son badge.
+#. Une personne possède un unique badge actif pour le système.
+#. Les cartes sont parfois perdues ou volées.
+#. Les journaux d’activités sont archivés dans le système.
+#. Les autorisations associées aux cartes égarées sont annulées pour ces badges.

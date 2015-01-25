@@ -13,13 +13,13 @@ Comptes rendus de réunions
 .. toctree::
     :maxdepth: 2
 
-    res/cr001.rst
-    res/cr002.rst
-    res/cr003.rst
-    res/cr004.rst
-    res/cr005.rst
-    res/cr006.rst
-    res/cr007.rst
+    res/CR001.rst
+    res/CR002.rst
+    res/CR003.rst
+    res/CR004.rst
+    res/CR005.rst
+    res/CR006.rst
+    res/CR007.rst
 
 
 .. _ScribeTools: http://scribetools.readthedocs.org

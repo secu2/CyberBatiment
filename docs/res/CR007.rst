@@ -1,0 +1,93 @@
+CR007
+=====
+
+:Date: 2015-02-22-18h-23h
+:Type: XXX
+:PartiesPrenantes: ABI, KWG, CMS, YBI, MPA
+:Lieu: Berlin-Batemis
+:Organisateur: KWG
+:Rapporteur: KWG
+:Presents: ABI, KWG, CMS, YBI, MPA
+:Objectifs: XXX
+
+#. Cette réunion a eu lieu en urgence suite à la publication de la nouvelle norme de sécurité EAN1225.
+#. La société Batemis, experte en sécurité, devient partie prenante du projet.
+#. La réunion a eu lieu dans les locaux de Batemis avec deux spécialistes sécurité:
+#. _ Clarissa Maris (CMS) - Batemis, Berlin
+#. _ Yohav El Benali (YBI) - Batemis, Berlin
+#. Batemis est sur le point de commercialiser des sas de sécurité révolutionnaires.
+#. Ces systèmes physiques seront prochainement commercialisés sous le nom de *Bissas*.
+#. Batemis souhaite accélérer la mise sur le marché, mais ne dispose pas d'équipe logicielle.
+#. Un accord a été passé pour intégrer le developpement du logiciel des bissas dans CyberBatemis.
+#. Les bissas ressemblent (par certains cotés) au système "Cilindro Bibussola" de AllUserIndustrie_:
+
+.. _CilindroBibussola :
+
+.. figure:: media/cilindroBibussola.jpg
+  :align: center
+
+    Figure 1: *"CILINDRO BIBUSSOLA"* par AllUserIndustrie_ (cf |videoBibussola|)
+
+20. Les différences entre le bissas et CilindroBibussola sont importantes.
+#. Des groupes de 2 à 10 bissas peuvent être assemblés par point de d'accès.
+#. Le matériel est extrêment performant (si les contrôles logiciels suivent).
+#. Ceci permet des flux important à un même point d'accès (jusqu'à 100 passages/mn).
+#. Les bissas peuvent être installés temporairement sur n'importe quel type de site.
+#. Ce sera le seul produit sur le marché offrant cette possibilité.
+#. Cela répond au besoin de Batemis pour sécuriser des sites pendant les compétitions.
+#. Les bissas sont symétriques et possèdent des lecteurs des deux cotés.
+#. Ces lecteurs sont polyvalents et permettent plusieurs types d'identification pass.
+#. CyberCompetition utilisera des `QR codes`_ et des cartes magnétiques.
+#. Il est possible de rendre obligatoire l'identification pass dans les deux sens.
+#. Au vu de la norme EAN1225, tous les bissas seront configurés de cette manière.
+#. On doit en effet a tout moment être capable de savoir dans quelle zone se trouve une personne.
+#. Tout comme le CilindroBibussola_ les bissas possèdent une fonction *anti tailgaiting* (cf |videoBibussola| s52).
+#. Batemis propose deux types de bissas, les bissas public et les bissas haute sécurité.
+#. Les premiers sont destinés à recevoir un public important.
+#. Les bissas public permettent d'organiser des files d'attentes uniques par point d'accès public.
+#. Ils sont munis d'un feu visible depuis la file indiquant l'état du bissas (vert, orange, rouge, orange, vert).
+#. Ce feu tricolore permet de montrer avec 2 seconde d'anticipation le prochain bissas public a priori disponible (orange puis vert).
+#. Pour ce faire, un détecteur de présence à l'exterieur de chaque coté fait passer le feu au orange.
+#. Ceci permet de montrer qu'une personne est sur le point d'entrer ou sortir.
+#. Batemis propose aussi des bissas haute sécurité (BHS).
+#. La personne ne peut passer qu'après avoir effectuer une identification physique.
+#. Cette identification physique se fait à l'intérieur du bissas, après l'identification pass à l'entrée.
+#. L'identification physique consiste soit en une empreinte digitale, soit en une reconnaissance faciale.
+#. Si la personne n'est pas autorisée un incident sera généré.
+#. Il en sera de même si le détecteur de métaux intégré dans les BHS se déclenche.
+#. La personne sera alors bloquée et devra attendre qu'un gardien vienne la débloquer.
+#. Tout les BHS disposent de caméra.
+#. De plus des caméras peuvent être installées à différents endroits sur le site.
+#. Les gardiens doivent pouvoir à tout moment les ré-orienter à distance.
+#. Les bissas et les caméras sont reliés via des liaisons RFC 321 au serveur de contrôle du site.
+#. Il y a une salle de contrôle par site; elle contient le serveur de contrôle.
+#. Seul les gardiens ont accès à cette zone.
+#. Dans la salle de contrôle ils disposent de postes CR600 relié via TCP/IP au serveur de contrôle du site.
+#. Les gardiens disposent également tous de mobiles MN100 (smartphones spécialisés).
+#. Les MN100 leur permettent de se déplacer entre les zones en restant connectés.
+#. Ils doivent pouvoir visualiser et réorienter les caméras depuis la salle de contrôle mais aussi depuis leur mobile.
+#. Il a été décidé de prendre un cas d'étude pour valider les besoins en terme de sécurité dans le cadre de CyberCompetition.
+
+.. figure:: media/site.jpg
+
+    Figure 2: *"Paraguana"*, un exemple de site devant être géré par |CyberCompetition|
+
+70. Il s'agit du site de paraguana, le site principal dans lequel aura lieu WAT 2015.
+#. Les différentes zones du sites sont représentées sur le plan.
+#. Par contre les batiments, installations et autres espaces non sécurisés n'y sont pas.
+#. De même pour les entrées de vèhicules et autres entrées gérées par des gardiens.
+#. La gestion des accès associées à chaque zone, ou groupe de zones, se fait par période et groupe de personnes.
+
+.. ............................................................................
+
+.. _AllUserIndustrie: http://www.archiexpo.com/prod/alluser-industrie/sliding-doors-commercial-buildings-security-automatic-52110-624140.html#product-item_142100
+
+.. |videoBibussola| replace::
+
+    :download:`VideoBibussola <./media/videoBibussola.mp4>`
+
+.. |CyberCompetition| replace::
+
+    `CyberCompetition <http://CyberCompetition.readthedocs.org>`__
+
+.. _`QR codes`: http://en.wikipedia.org/wiki/QR_code
