@@ -9,6 +9,9 @@ CR001
 :Presents: ABI, JDR, KWG, MPA, PSO, TNA, ZSH
 :Objectifs: Présentation des parties prenantes, grands objectifs
 
+.. attention::
+    Ce compte rendu est un *document de travail* et n'est pas contractuel.
+
 #. En ce début de projet, les parties prenantes sont les suivantes :
 #. _ Ahmed BLASI (ABI) – IMAG, Grenoble
 #. _ Jean-Claude DUFOUR (JDR) - Batemis, Grenoble
@@ -43,13 +46,13 @@ CR001
 #. La partie du serveur de contrôle  devra être développé impérativement en Objective-C.
 #. Les autres parties devront être développées en Python 2.7.
 #. La base de données résidant sur le serveur d'application devra être Oracle.
-#. Le framework Django sera utilisé pour tous les aspects web.
+#. Le framework Django sera utilisé pour tous les serveurs web.
 #. Oracle est imposé par des accords commerciaux entre Oracle et Batemis.
 #. Le choix de Python/Django est lié au fait que Batemis utilise déjà ces technologies en interne.
 #. Objective-C est le choix standard dans ce domaine pour la programmation des contrôleurs.
 #. En ce qui concerne le matériel de sécurité, Batemis a passé un accord avec Bissis.
 #. Bissis est un constructeur proposant du matériel extrêmement innovant.
-#. En particulier Batemis a décidé de se baser des "bissas" pour toutes les offres  EAN1225.
+#. En particulier Batemis a décidé de se baser des "bissas" pour toutes les offres EAN1225.
 #. Batemis et Bissis ont passé un accord pour mettre sur le marché des bissas le plus rapidement possible.
 #. Bissis sera donc partie prenante pour le projet et fournira le matériel.
 #. Une prochaine réunion aura lieu dans le locaux de Bissis à Berlin pour étudier les "bissas".

@@ -1,41 +1,82 @@
 CR005
 =====
-:Date: 2015-01-18-16h-17h
-:Type: XXX
-:Lieu: Paris-Batemis
+:Date: 2015-01-18-12h-17h
+:Type: Reunion
 :PartiesPrenantes: ABI, HSI, KWG, MPA, PSO
-:Organisateur: KWG
+:Lieu: Paris-Batemis
+:Organisateur: ABI
+:Rapporteur: KWG
 :Presents: ABI, HSI, KWG, MPA
-:Objectifs: XXX
+:Objectifs: Définir l'architecture, discuter du système de gardiennage.
 
-#. Les utilisateurs sont des personnes connues au minimum par leur nom et leur prénom.
-#. Ils sont identifiés par un numéro de code lié au système d'accès.
-#. Un badge comporte un numéro qui l'identifie.
-#. On enregistre lorsqu'on le donne à quelqu'un, le propriétaire et la date-heure de remise.
-#. Les autorisations évoluent dans le temps avec les groupes d'appartenance.
-#. Il y a des annulations d'autorisations pendant les congés par exemple.
-#. En fait tout dépend du calendrier associé au groupe.
-#. Une autorisation d'accès est donnée pour un groupe de personnes à un bâtiment.
-#. Cela peut se faire sur des périodes de plusieurs semaines consécutives.
-#. Les horaires d’ouverture des bâtiments dépendent des statuts des personnes.
-#. Il y a un régime pour les jours ouvrés et un autre pour les jours fériés.
-#. C’est la notion de période.
-#. Les jours ouvrés et fériés sont définis pour tous les bâtiments.
-#. Il peut y avoir des périodes de fermeture complète des bâtiments.
-#. Chaque personne est rattachée à un ou plusieurs groupes.
-#. Son droit d'accès étant alors la configuration la plus souple.
-#. Il s’agit de l’union des autorisations des groupes auxquels elle appartient.
-#. Idéalement les groupes devraient pouvoir être imbriqués.
-#. Par exemple on devrait pouvoir définir des droits généraux pour le groupe étudiants.
-#. Puis définir des groupes spécialisés come étudiants de master, puis master sigal.
-#. Idéalement on devrait pouvoir leur donner accès à une salle particulière à une date donnée.
-#. Les portes peuvent être dans divers états mais sont indissociables des point d'accès.
-#. Les états sont par exemple actif, en panne, en attente, bloquée, débloquée, ouverte, fermée.
-#. Dans le cas de systèmes à lecteurs et portes, les conventions suivantes sont prises.
-#. Chaque lecteur est identifié par le point d'accès qu'il dessert, suivi d'un rôle.
-#. Le rôle est E pour externe et I pour interne.
-#. Les droits de la personne sont liés à son badge.
-#. Une personne possède un unique badge actif pour le système.
-#. Les cartes sont parfois perdues ou volées.
-#. Les journaux d’activités sont archivés dans le système.
-#. Les autorisations associées aux cartes égarées sont annulées pour ces badges.
+.. attention::
+    Ce compte rendu est un *document de travail* et n'est pas contractuel.
+
+#. Batemis rappelle l'architecture classique des applications déjà mises en place par leur soin.
+#. Il n'y a priori aucune raison de changer d'architecture sachant qu'elle fonctionne bien dans différents types de contextes.
+#. Les matériels sécurités (portiques, caméras, etc.) sont toujours connectés directement au serveur de contrôle.
+#. Cela se fait par des dizaines, voir centaines ou milliers de fils, des hubs, etc.
+#. Ce serveur doit gérer en casi temps réels les signaux émis mais délègue au serveur d'applications la vérification des autorisations, la gestion de l'historique, l'enregistrement des incidents, etc.
+#. Le serveur d'applications doit être plus ou moins puissant selon le volume de données à gérer et le nombre de transaction à mettre en oeuvre.
+#. Pour les sites de Paraguana ou de Morrocoy, il n'y aura a priori pas de soucis, mais Batemis a déjà eu affaire à des sites avec plus de 800 points d'accès, 80 000 badgeurs longs, avec des historiques à conserver sur 5 ans.
+#. De tels clients devront pouvoir être gérés avec CyberBatiment.
+#. Les postes fixes de la salles de contrôles sont traditionnellement directement connectés sur le serveur de contrôle.
+#. Ce type de matériel n'étant pas commercialisé par Bissis, Batemis prévoit un partenariat avec la société TBC.
+
+.. figure:: media/ecrans.jpg
+    :align: center
+
+    Fig1: Exemple d'écrans de contrôle proposés par la société TBC_
+
+#. Il n'est pas clair pour l'instant si les logiciels correspondant seront développés par IMAG ou sous-traité à TBC.
+#. Par contre les gardiens doivent disposer d'appareil mobiles qui les suivent lors de leur déplacement sur les différentes zones.
+#. Il a été décidé d'utiliser des Smartphone Android de marque Samsung avec de grands écrans.
+#. Batemis a en effet décider d'utiliser des applications "web responsive" dans le cadre de CyberBatiment.
+#. C'est un grand changement car jusque là des appareils spécialisés étaient utilisés.
+#. Les smartphones gardiens seront connectés via *https* et un réseau wifi interne sécurisé au serveur web interne.
+#. Batemis mentionne qu'il est possible d'installer des systèmes de brouillage et bien d'autres choses, qui rendent ce réseau à la fois sûr et fiable.
+#. L'application mobile gardien est essentielle dans le système.
+#. Il doit être possible de visualiser une caméra (une seule à la fois) et de l'orienter.
+#. A tout moment le gardien doit pouvoir visualiser les incidents non traités et éventuellement en "prendre".
+#. Les incidents peuvent être localisés ou non (e.g. bissas et/ou point d'accès).
+#. Les incidents détectés par CyberBatiment (e.g. métaux détectés dans un bissas Xtra) sont dit système.
+#. D'autres évenements, les évenements "gardiens", sont eux créés par les gardiens.
+#. C'est le cas par exemple lorsqu'un gardien voit quelqu'un sauter par dessus un mur sécurité.
+#. Ou lorsqu'un gardien constate (par exemple sur le site de Moroccoy) des fumées anormales dans une zone.
+#. Tous ces incidents devront être gardé dans l'historique.
+#. Lorsqu'un gardien prend un incident, celui change d'état ("nouveau"->"affecté").
+#. En fonction des cas, et après s'être typiquement rendu sur place, le (ou les) gardien(s) peu(ven)t "ignorer" l'incident, le "fermer", ou le passer en mode "inconnu".
+#. Un gardien peut également "transférer" un incident vers un ou d'autres gardiens.
+#. Par exemple si un intru est detecté dans une zone par un gardien dans un mirador, ce dernier peut transférer l'incident à différents gardiens en fonction de leurs localisations et des mouvements de l'intru.
+#. Il est possible à chaque état d'associer des notes (écrites, photos, audio).
+#. En suitation de crise, le temps de réaction des gardiens peut devenir essentiel.
+#. Il est nécessaire de pouvoir pré-enregistrer les types d'incidents et types de notes classiques.
+#. C'est le rôle des superviseurs et cela se fait généralement lors de la définition du plan sécurité initial en fonction des caractéristiques du site.
+#. Assez souvent on découvre par la suite de nouveaux types liés à des situations répétitives (e.g. "tuyau percé" dans une usine, "malaise dans un bissas" dans un hopital, etc.).
+#. Evidemment si nécessaire les gardiens peuvent utiliser la fonction téléphone de leur Smartphone pour appeler les services compétents (urgences, police, armée, etc.)
+#. La discussion sur le rôle des gardiens s'est achevé sur la conclusion suivante.
+#. L'IHM des gardiens doit être particulièrement ergonomique vu le contexte d'utilisation à la fois quotidien et potentiellement intensif.
+#. En ce qui concerne le poste superviseur (un seul) et les postes administrateurs (autant que nécessaire), ceux-ci seront également connectés au serveur web interne.
+#. Il s'agit dans les deux cas de PCs standards dotés du navigateur Chrome.
+#. Les administrateurs gèrent non seulement les inscriptions des badgeurs, mais aussi les problèmes liés à la perte d'un badge long.
+#. Lorsqu'un badge long est perdu, volé (y compris via agression), le badgeur est tenu d'en informer immédiatement le centre securité.
+#. Les badges longs peuvent en fait avoir plusieurs formes: badge magnétique en plastique, mais aussi pendentifs plaqués or et montre de luxe dans certaines entreprises.
+#. Que ces badges soient à contact où non, il est toujours associé à un seule personne à la fois et une personne ne peut posséder qu'un badge (pour un site) à un moment donné.
+#. Les badgeurs sont connus au minimum par leur nom et leur prénom et un numéro d'identité national (NIN).
+#. Le NIN utilisé dépend des personnes et des pays considérés.
+#. Ce peut être le numéro de passeport, le numéro de carte d'identité ou tout autre document selon le pays.
+#. Un mél et deux numéros de téléphone peuvent également être renseignés lors de l'inscription.
+#. A chaque fois qu'un badge est donné à quelqu'un, qu'il est annulé suite à une perte ou un vol, un  événement doit être enregistré dans l'historique (norme EAN1225).
+#. Toutes ses opérations sont effectuées par les administrateurs de groupes.
+#. Lorsqu'un badgeur appartient à plusieurs groupes, et si ces groupes sont gérés par plusieurs administrateurs, n'importe quel de ces administrateurs peut gérer la perte du badge.
+#. Finalement, le serveur web externe est lui le seul élément de CyberBatiment a être connecté à internet via tcp-ip.
+#. C'est lui qui gèrera les web-services mentionnés auparavant.
+#. Il est fait état d'un démarrage éminent de la phase de collecte des exigences.
+#. Les spécifications UML seront faites par un autre groupe au sein de l'IMAG à partir des comptes rendus de réunions réalisés jusque là.
+#. Les personnels de la société Batemis ne seront pas disponibles dans les semaines qui viennent.
+#. Il risque d'en être de même des membres IMAG ayant participé à ces réunions.
+#. Un voyage en Russie puis en Irlande étant prévu pour le prochain mois.
+
+.. ............................................................................
+
+.. _TBC: http://www.tbcconsoles.com/

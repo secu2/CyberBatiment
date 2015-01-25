@@ -9,6 +9,10 @@ CR002
 :Presents: ABI, JDR, PSO, AGO
 :Objectifs: Cas d'étude Paraguana/WAT 2015
 
+.. attention::
+    Ce compte rendu est un *document de travail* et n'est pas contractuel.
+
+
 #. Nouvel intervenant:
 #. _ Apito GUARACARUMBO (AGO) - Competis, San Juan de Los Morros
 #. La réunion a eu lieu sur le site de Paraguana, guidé par AGO.

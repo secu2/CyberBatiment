@@ -9,6 +9,10 @@ CR003
 :Presents: ABI, JDR, PSO, AGO,
 :Objectifs: Cas d'étude Usine de Morrocoy
 
+.. attention::
+    Ce compte rendu est un *document de travail* et n'est pas contractuel.
+
+
 #. Nouvel intervenant, directeur de l'usine à Morrocoy:
 #. _ Eliezer LAEMMEL (ELL) - Morrocoy, Chimiotis
 
