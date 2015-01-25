@@ -25,6 +25,7 @@ CR002
 #. Les différents points d'accès et le nombre des bissas a été déterminé par Batemis.
 #. De même pour le positionnement des caméras et de la salle de contrôle.
 
+.. _CR002Fig1:
 .. figure:: media/paraguana.jpg
     :align: center
 
@@ -41,7 +42,7 @@ CR002
 #. Cette autorisation n'est valide que pour la période correspondant à l'épreuve choisie.
 #. Un exemple de billet a été fourni par Competis et reproduit ci-dessous.
 
-.. _Fig2:
+.. _CR002Fig2:
 .. figure:: media/billet.jpg
     :align: center
 
@@ -54,7 +55,7 @@ CR002
 #. Par exemple si une équipe perd est éliminée via un match, elle ne pourra plus participer à la suite.
 #. Un administrateur de groupe doit donc pouvoir facilement changer les autorisations d'un groupe.
 #. Différents autres groupes de badgeurs ont été évoqués dans ce cas d'étude.
-#. Par exemple les administrateurs et les journalistes ont chacun leurs zones.
+#. Par exemple les administratifs et les journalistes ont chacun leurs zones.
 #. Les gardiens peuvent aller dans toutes les zones dont la salle de contrôle.
 #. Ils peuvent par ailleurs faire passer une personne (une seule) avec leur badge.
 #. C'est utile par exemple pour les V.I.P.s qui vont dans la tribune V.I.P.s. ou Prestige.
@@ -69,9 +70,10 @@ CR002
 #. Dans une compétition telle que WAT 2015 on attend en effet environ 100 000 spectateurs.
 #. Plus de 400 000 billets seront sans doute émis (mais par forcément utilisés).
 #. CyberCompetition_ (par Competis) sera en charge de l'émission des billets.
-#. Pour les spectateurs les badges courts prendront la forme de QR codes sur les billets vendus (cf Fig2_)
+#. Pour les spectateurs les badges courts prendront la forme de QR codes sur les billets vendus (cf CR002Fig2_)
 #. Le fichier ci-dessous a été fourni par Competis.
 
+.. _CR002Fig3:
 .. figure:: media/import.jpg
     :align: center
 
@@ -80,7 +82,7 @@ CR002
 46. Seules certaines informations seront nécessaires dans le cadre de CyberBatiment.
 #. Il a été convenu qu'un format XML devrait être défini dans ce cadre.
 #. Des logiciels externes (e.g. CyberCompetition) devront pouvoir ajouter des badges courts.
-#. Ceci devra pouvoir se faire via un via un web service sécurisé.
+#. Ceci devra pouvoir se faire via un web service sécurisé.
 #. Competis écrira un wrapper pour appeler ce service une fois celui-ci défini.
 #. En conclusion, la visite sur le site de Paraguana a été très instructive.
 #. Il a cependant été jugé souhaitable de considérer un autre type de site.

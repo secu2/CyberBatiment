@@ -7,76 +7,91 @@ CR005
 :Organisateur: ABI
 :Rapporteur: KWG
 :Presents: ABI, HSI, KWG, MPA
-:Objectifs: Définir l'architecture, discuter du système de gardiennage.
+:Objectifs: Définir l'architecture et revenir sur les fonctions associées à chaque noeud.
 
 .. attention::
     Ce compte rendu est un *document de travail* et n'est pas contractuel.
 
 #. Batemis rappelle l'architecture classique des applications déjà mises en place par leur soin.
-#. Il n'y a priori aucune raison de changer d'architecture sachant qu'elle fonctionne bien dans différents types de contextes.
-#. Les matériels sécurités (portiques, caméras, etc.) sont toujours connectés directement au serveur de contrôle.
-#. Cela se fait par des dizaines, voir centaines ou milliers de fils, des hubs, etc.
-#. Ce serveur doit gérer en casi temps réels les signaux émis mais délègue au serveur d'applications la vérification des autorisations, la gestion de l'historique, l'enregistrement des incidents, etc.
-#. Le serveur d'applications doit être plus ou moins puissant selon le volume de données à gérer et le nombre de transaction à mettre en oeuvre.
-#. Pour les sites de Paraguana ou de Morrocoy, il n'y aura a priori pas de soucis, mais Batemis a déjà eu affaire à des sites avec plus de 800 points d'accès, 80 000 badgeurs longs, avec des historiques à conserver sur 5 ans.
+#. Il n'y a priori aucune raison de changer d'architecture sachant qu'elle fonctionne bien dans différents contextes.
+#. Les matériels sécurité (bissas, caméras, etc.) sont toujours connectés directement au serveur de contrôle.
+#. Ce serveur doit gérer en quasi temps réel les signaux émis mais délègue au serveur applicatif la vérification des autorisations, la gestion de l'historique, l'enregistrement des incidents, etc.
+#. Le serveur d'applications doit être plus ou moins puissant selon le volume de données à gérer et le nombre de transactions à mettre en oeuvre.
+#. Pour les sites de Paraguana ou de Morrocoy, il n'y aura a priori pas de soucis, mais Batemis a déjà eu affaire à des sites avec plus de 800 points d'accès, 80 000 badgeurs longs, avec des historiques à conserver sur 5 ans (base militaire en sibérie).
 #. De tels clients devront pouvoir être gérés avec CyberBatiment.
-#. Les postes fixes de la salles de contrôles sont traditionnellement directement connectés sur le serveur de contrôle.
-#. Ce type de matériel n'étant pas commercialisé par Bissis, Batemis prévoit un partenariat avec la société TBC.
+#. Les postes fixes de la salle de contrôle sont traditionnellement directement connectés sur le serveur de contrôle, à la fois pour des problèmes de cablages et des aspects sécurité.
+#. Ce type de matériel n'étant pas commercialisé par Bissis, Batemis prévoit un partenariat avec la société TBC_ (entre autre).
 
+.. _CR005Fig1:
 .. figure:: media/ecrans.jpg
     :align: center
 
     Fig1: Exemple d'écrans de contrôle proposés par la société TBC_
 
-#. Il n'est pas clair pour l'instant si les logiciels correspondant seront développés par IMAG ou sous-traité à TBC.
-#. Par contre les gardiens doivent disposer d'appareil mobiles qui les suivent lors de leur déplacement sur les différentes zones.
-#. Il a été décidé d'utiliser des Smartphone Android de marque Samsung avec de grands écrans.
-#. Batemis a en effet décider d'utiliser des applications "web responsive" dans le cadre de CyberBatiment.
+10. Il n'est pas clair pour l'instant si les logiciels correspondant seront développés par IMAG ou sous-traités à TBC_.
+#. Cette dernière solution est assez probable au vu des problèmes posés par de nombreux flux vidéos simultanés.
+#. La spécification de la partie applicative et entre autre des données gérèes par CyberBatiment seront d'autant plus important si une sous-traitance à lieu.
+#. Cet aspect renforce de nouveau la justesse du choix d'UML effectué par Batemis.
+#. Par contre les gardiens doivent disposer d'appareil mobiles qui les suivent lors de leur déplacement sur les différentes zones et les aspects logiciels correspondant seront à la charge d'IMAG.
+#. Il a été décidé d'utiliser des Smartphones Android de marque Samsung_ pour la taille de leurs écrans et leur puissance de calcul.
+#. Batemis a décidé d'utiliser des applications "web responsive" dans le cadre de CyberBatiment.
 #. C'est un grand changement car jusque là des appareils spécialisés étaient utilisés.
 #. Les smartphones gardiens seront connectés via *https* et un réseau wifi interne sécurisé au serveur web interne.
 #. Batemis mentionne qu'il est possible d'installer des systèmes de brouillage et bien d'autres choses, qui rendent ce réseau à la fois sûr et fiable.
-#. L'application mobile gardien est essentielle dans le système.
-#. Il doit être possible de visualiser une caméra (une seule à la fois) et de l'orienter.
-#. A tout moment le gardien doit pouvoir visualiser les incidents non traités et éventuellement en "prendre".
-#. Les incidents peuvent être localisés ou non (e.g. bissas et/ou point d'accès).
-#. Les incidents détectés par CyberBatiment (e.g. métaux détectés dans un bissas Xtra) sont dit système.
+
+.. _CR005Fig2:
+.. figure:: media/samsung.jpg
+    :align: center
+
+    Fig2: Smartphone destiné aux gardiens
+
+20. Il doit être possible de visualiser une caméra (une seule à la fois) et de l'orienter.
+#. A tout moment le gardien doit pouvoir visualiser les incidents en cours et éventuellement en "prendre".
+#. Les incidents peuvent être localisés ou non (e.g. bissas, point d'accès et/ou zone).
+#. Les incidents système détecté par CyberBatiment (e.g. métaux détectés dans un bissas Xtra) doivent y figurer.
 #. D'autres évenements, les évenements "gardiens", sont eux créés par les gardiens.
 #. C'est le cas par exemple lorsqu'un gardien voit quelqu'un sauter par dessus un mur sécurité.
 #. Ou lorsqu'un gardien constate (par exemple sur le site de Moroccoy) des fumées anormales dans une zone.
-#. Tous ces incidents devront être gardé dans l'historique.
+#. Tous ces incidents devront être gardés dans l'historique.
 #. Lorsqu'un gardien prend un incident, celui change d'état ("nouveau"->"affecté").
 #. En fonction des cas, et après s'être typiquement rendu sur place, le (ou les) gardien(s) peu(ven)t "ignorer" l'incident, le "fermer", ou le passer en mode "inconnu".
 #. Un gardien peut également "transférer" un incident vers un ou d'autres gardiens.
 #. Par exemple si un intru est detecté dans une zone par un gardien dans un mirador, ce dernier peut transférer l'incident à différents gardiens en fonction de leurs localisations et des mouvements de l'intru.
 #. Il est possible à chaque état d'associer des notes (écrites, photos, audio).
-#. En suitation de crise, le temps de réaction des gardiens peut devenir essentiel.
-#. Il est nécessaire de pouvoir pré-enregistrer les types d'incidents et types de notes classiques.
+#. En situation de crise, le temps de réaction des gardiens peut devenir essentiel.
+#. Il est nécessaire de pouvoir pré-enregistrer les types d'incidents avec des notes classiques.
 #. C'est le rôle des superviseurs et cela se fait généralement lors de la définition du plan sécurité initial en fonction des caractéristiques du site.
-#. Assez souvent on découvre par la suite de nouveaux types liés à des situations répétitives (e.g. "tuyau percé" dans une usine, "malaise dans un bissas" dans un hopital, etc.).
+#. Assez souvent on découvre par la suite de nouveaux types liés à des situations répétitives (e.g. "tuyau percé" dans une usine, "malaise dans un bissas" dans un hopital, "cartable coincé dans un bissas" dans une école, etc.).
+#. Les gardiens peuvent alors selectionner les éléments nécessaires lors de scénarios types.
 #. Evidemment si nécessaire les gardiens peuvent utiliser la fonction téléphone de leur Smartphone pour appeler les services compétents (urgences, police, armée, etc.)
 #. La discussion sur le rôle des gardiens s'est achevé sur la conclusion suivante.
 #. L'IHM des gardiens doit être particulièrement ergonomique vu le contexte d'utilisation à la fois quotidien et potentiellement intensif.
-#. En ce qui concerne le poste superviseur (un seul) et les postes administrateurs (autant que nécessaire), ceux-ci seront également connectés au serveur web interne.
+#. _
+#. En ce qui concerne le poste superviseur (toujours un seul, ce qui permet de respecter la norme EAN1225) et les postes administrateurs (autant que nécessaire), ceux-ci seront également connectés au serveur web interne.
 #. Il s'agit dans les deux cas de PCs standards dotés du navigateur Chrome.
+#. _
 #. Les administrateurs gèrent non seulement les inscriptions des badgeurs, mais aussi les problèmes liés à la perte d'un badge long.
 #. Lorsqu'un badge long est perdu, volé (y compris via agression), le badgeur est tenu d'en informer immédiatement le centre securité.
-#. Les badges longs peuvent en fait avoir plusieurs formes: badge magnétique en plastique, mais aussi pendentifs plaqués or et montre de luxe dans certaines entreprises.
-#. Que ces badges soient à contact où non, il est toujours associé à un seule personne à la fois et une personne ne peut posséder qu'un badge (pour un site) à un moment donné.
-#. Les badgeurs sont connus au minimum par leur nom et leur prénom et un numéro d'identité national (NIN).
+#. Les badges longs peuvent en fait avoir plusieurs formes: badge magnétique en plastique, mais aussi pendentifs plaqués or et montres de luxe chez certains clients.
+#. Batemis se charge de répondre aux besoins des clients en terme de packaging.
+#. Que ces badges soient à contact où non, ils sont toujours associés à une seule personne à la fois et une personne ne peut posséder qu'un badge (pour un site) à un moment donné.
+#. Les badgeurs sont connus au minimum par leur nom et leur prénom et un numéro d'identité national (NIN); contrainte nécessaire dans le cadre la norme EAN1225.
+#. Ceci est vrai aussi bien pour les badges courts que pour les badges longs.
 #. Le NIN utilisé dépend des personnes et des pays considérés.
 #. Ce peut être le numéro de passeport, le numéro de carte d'identité ou tout autre document selon le pays.
-#. Un mél et deux numéros de téléphone peuvent également être renseignés lors de l'inscription.
-#. A chaque fois qu'un badge est donné à quelqu'un, qu'il est annulé suite à une perte ou un vol, un  événement doit être enregistré dans l'historique (norme EAN1225).
+#. Un mél et deux numéros de téléphone peuvent également être renseignés lors de l'enregistrement.
+#. A chaque fois qu'un badge est donné à quelqu'un, qu'il est annulé suite à une perte ou un vol, un incident doit être enregistré dans l'historique (norme EAN1225).
 #. Toutes ses opérations sont effectuées par les administrateurs de groupes.
 #. Lorsqu'un badgeur appartient à plusieurs groupes, et si ces groupes sont gérés par plusieurs administrateurs, n'importe quel de ces administrateurs peut gérer la perte du badge.
 #. Finalement, le serveur web externe est lui le seul élément de CyberBatiment a être connecté à internet via tcp-ip.
 #. C'est lui qui gèrera les web-services mentionnés auparavant.
+#. _
 #. Il est fait état d'un démarrage éminent de la phase de collecte des exigences.
 #. Les spécifications UML seront faites par un autre groupe au sein de l'IMAG à partir des comptes rendus de réunions réalisés jusque là.
 #. Les personnels de la société Batemis ne seront pas disponibles dans les semaines qui viennent.
-#. Il risque d'en être de même des membres IMAG ayant participé à ces réunions.
-#. Un voyage en Russie puis en Irlande étant prévu pour le prochain mois.
+#. Il risque d'en être de même des membres IMAG ayant participé à ces réunions, un voyage en Russie puis en Irlande étant prévu pour le prochain mois.
 
 .. ............................................................................
 
 .. _TBC: http://www.tbcconsoles.com/
+.. _Samsung: http://www.samsung.com/fr/home

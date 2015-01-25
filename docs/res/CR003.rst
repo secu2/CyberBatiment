@@ -21,13 +21,14 @@ CR003
 #. Il s'agit donc d'un prospect chaud pour CyberBatiment.
 #. Un premier plan sécurité a été créé à partir des informations fournies par Chimiotis.
 
+.. _CR003Fig1:
 .. figure:: media/morrocoy.jpg
     :align: center
 
     Fig 1: Potentiel plan securité pour le site de Morrocoy
 
-5. Contrairement au site Paraguana le site Morrocoy n'est pas temporaire.
-#. Selon ELE, une des préoccupations prioritaire pour Chimiotis est d'être conforme à l'article 17 de la norme EAN1225.
+7. Contrairement au site Paraguana le site Morrocoy n'est pas temporaire.
+#. Selon ELL, une des préoccupations prioritaire pour Chimiotis est d'être conforme à l'article 17 de la norme EAN1225.
 #. Cet article concerne les règles à appliquer en cas d'incendie dans une zone.
 #. Tous les points d'accès doivent être ouverts dans les zones "Incendie Libre" (IL).
 #. Dans les autres zones, un incident système est seulement déclenché.
@@ -35,36 +36,35 @@ CR003
 #. Par contre pour une zone IL les points d'accès doivent automatiquement s'ouvrir jusqu'à l'exterieur.
 #. Il faudra donc prendre en compte les systèmes à incendie et les interfacer avec CyberBatiment.
 #. Renseignement pris auprès de ABO, il n'existe que 4 zones IL à Paraguana;  les différentes tribunes.
-#. Par ailleurs le nombre de groupes est plus faible à Moroccoy qu'a Paraguana.
+#. Par ailleurs à première vue le nombre de groupes est a priori plus faible à Moroccoy qu'à Paraguana.
 #. Le nombre de badgeurs par groupe va de 1 à 300 environ.
 #. Les ouvriers font les 3 x 8 mais de manière relativement régulière.
-#. Les membres de chaque groupe sont assez stables.
-#. En effet le personnel de l'usine ne change que rarement.
+#. Les membres de chaque groupe sont finalement assez stables.
+#. En effet le personnel de l'usine ne change que rarement et les groupes sont basés sur des règles relativement stables en terme de zones.
 #. Ci-dessous un plan d'autorisation fourni par l'administration de Chemiotis.
 
-.. _Fig2:
+.. _CR003Fig2:
 .. figure:: media/morrocoyAutorisations.jpg
     :align: center
 
     Fig2: Plan d'autorisation (simplifié) pour le site de Morrocoy
 
-20. Les autorisations aux zones sont présentées pour chaque groupe à droite.
+22. Les autorisations aux zones sont présentées pour chaque groupe à droite.
 #. A gauche sont représentées les périodes liées à ces autorisations.
 #. Après discussion avec l'administration il apparait qu'il s'agit d'une version très simplifiée.
 #. En effet l'usine devant tourner 24h/24h, 365j/365, des groupes d'ouvriers sont ajoutés pour les jours fériés et les week ends.
-#. Ces groupes ne sont pas représentés sur le planning annuel montré en Fig2_.
-#. Par ailleurs les groups du planning annuel sont homogènes par par rapport aux zones autorisées.
-#. Autrement dit, pour une période un groupe peut accèder toujours aux mêmes zones (cf Fig2_) indépendament de la période.
+#. Ces groupes ne sont pas représentés sur le planning annuel montré en CR003Fig2_.
+#. Par ailleurs les groupes du planning annuel sont homogènes par rapport aux zones autorisées.
+#. Autrement dit, pour une période un groupe peut accèder toujours aux mêmes zones (cf CR003Fig2_) indépendament de la période.
 #. En réalité, et selon un exemple donné par ELL, certains groupes (e.g. GX et GY) peuvent accèder à la zone PT et PO en semaine de 22h à 6h pendant l'été.
-#. Mais de plus GX peut en plus à la zone X et DM le week end de 23h à 5h de mars à avril, et sans doute le 17 et 18 février à n'importe quelle heure.
-#. Actuellement tous ces différents cas sont géré de manière ad-hoc par les gardiens en postes aux points d'accès de chaque zone.
+#. Mais de plus GX peut en plus accéder à la zone X et DM le week end de 23h à 5h de mars à avril, et sans doute le 17 et 18 février à n'importe quelle heure.
+#. Actuellement tous ces différents cas sont gérés de manière ad-hoc par les gardiens en poste aux points d'accès de chaque zone.
 #. En pratique cette gestion est un peu aléatoire et se base sur le bon-vouloir des gardiens et des employés.
 #. Il faudra absolument définir des autorisations plus fines dans CyberBatiment pour représenter ce genre de périodes.
 #. Une autorisation doit être un triplet (groupe(s),période(s),zone(s)).
 #. Par exemple, en reprenant l'exemple donné par ELL, on doit pouvoir définir deux autorisations comme suit.
 
-.. _Tab1:
-
+.. _CR003Tab1:
 .. table:: Tab1: Example ELL2015_01_06
 
     +-----+---------+----------------------------------+-------+
@@ -77,13 +77,13 @@ CR003
     |     |         | 17/02/15 - 18/02/15              |       |
     +-----+---------+----------------------------------+-------+
 
-34. Les autorisations sous forme de triplets pourraient aussi convenir à priori pour Paraguana/WAT 2015.
+36. Les autorisations sous forme de triplets pourraient aussi convenir à priori pour Paraguana/WAT 2015.
 #. Il s'agit en effet d'une représentation générale et sans doute satisfaisante.
-#. Il a été décidé de partir à priori sur ce modèle d'autorisation pour CyberBatiment.
+#. Il a été décidé de partir a priori sur ce modèle d'autorisation pour CyberBatiment.
 #. Dans le cas de Morrocoy, il semble qu'un seul administrateur pourrait gérer tous les groupes.
-#. Cela contraste avec le site de Paraguana où plusieurs administrateurs doivent gérer un même groupe.
+#. Cela contraste avec le site de Paraguana où plusieurs administrateurs deveront gérer des groupes différents et inversemment ou un même groupe pourra être géré par des administrateurs différents.
 #. Actuellement l'usine est gardée par 60 gardiens, 24/24.
-#. Avec CyberBatiment on estime que 4 gardiens seraient suffisant, d'ou 12 en 3x8.
+#. Avec CyberBatiment on estime que 4 gardiens seraient suffisant, d'où 12 en 3x8.
 #. Comme pour les autres sites, le serveur de contrôle serait installé dans la salle de contrôle.
 #. Chemiotis émet également le besoin de pouvoir recevoir des visiteurs via des badges courts.
 #. Dans ce cas les badges courts pourraient être distribués en direct à la reception et utilisé immédiatement.
@@ -91,13 +91,13 @@ CR003
 #. Il s'agit simplement d'un coup de téléphone donné aux gardiens, ce qui n'est évidemment sécurisé.
 #. Chemiotis souhaiterait par contre pouvoir disposer de l'historique d'accès.
 #. Chemiotis voudrait contrôler les heures de présences dans l'usine des employés.
-#. Sachant que la conservation de l'historique des évenements est imposé par la norme EAN1225 cette fonctionalité devra être intégré dans Cyberbatiment.
+#. Sachant que la conservation de l'historique des évenements est imposé par la norme EAN1225 cette fonctionalité devra être intégrée dans Cyberbatiment.
 #. Un web service permettera à des systèmes externes (e.g. systèmes de paye / de contrôle de présence) d'importer les événements d'accès (horaire d'entrée pour chaque point d'accès).
 #. Ce web service devra être sécurisé pour des aspects de confidentialité mais aussi de sécurité (e.g. heures d'accès des gardiens, etc).
 #. Après discussion avec Competis, l'historique d'accès sera également nécessaire pour Paraguana/WAT 2015.
 #. Le service web d'import sera utilisé entre autre par les services commerciaux pour déterminer les billets vendus n'ayant pas été utilisés.
 #. En conclusion, les besoins relatifs au site de Morrocoy sont tout à fait pertinents pour CyberBatiment.
-#. Ce cas d'étude est assez complémentaire par rapport à Paragunana.
+#. Ce cas d'étude est assez complémentaire par rapport à Paraguana.
 #. Batemis a donc décidé de prendre en compte ces deux cas d'étude pour pouvoir valider la généralité du système CyberBatiment.
 #. La prochaine réunion aura lieu comme prévu à Berlin - Bissis.
 
