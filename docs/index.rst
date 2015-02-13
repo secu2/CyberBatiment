@@ -7,7 +7,7 @@ Comptes rendus de réunions
 --------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     res/CR001.rst
     res/CR002.rst
