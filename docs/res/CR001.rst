@@ -1,7 +1,6 @@
 CR001
 =====
 
-
 :Date: 02-01 08h-10h
 :Type: Réunion
 :Lieu: Grenoble-Batemis
