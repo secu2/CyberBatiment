@@ -2,7 +2,7 @@ bbCR001
 =====
 
 
-:Date: 2016-01-02 08h-10h
+:Date: 02-01 08h-10h
 :Type: Réunion
 :Lieu: Grenoble-Batemis
 :PartiesPrenantes: ABI, JDR, KWG, MPA, PSO, TNA, ZSH
@@ -26,55 +26,45 @@ bbCR001
 #.  - Zork SWISH (ZSH) – Batemis, Autriche
 #.  - Cassandra COHEN (CCN) - IM2AG, Grenoble
 #.  _
-#.  Le présent projet a été baptisé CyberBatiment.
-#.  Les demandes de sécurisation de sites et de bâtiments se développent suites aux attentats des dernières années.
-#.  Il s'agit d'une opportunité commerciale pour les sociétés de sécurité comme Batemis.
-#.  La société Batemis est spécialisée dans les systèmes de contrôle d’accès.
-#.  Batemis ne produit pas les équipements de sécurité, mais les assemblent et les installent.
-#.  Jusqu’à présent les logiciels contrôlant ces équipement étaient développés à la demande pour chaque site.
-#.  Batemis désire désormais se doter d’un ERP appelé CyberBatiment.
-#.  CyberBatiment doit pouvoir se déployer sur différents types de sites:
-    des usines, des lieux de cultes, des hôpitaux, des sites sportifs, des complexes commerciaux,
-    des cités scolaires, etc.
-#.  Jusqu'à présent tout se faisait au cas par cas, y compris le développement/adaptation des logiciels.
-#.  Ce modèle n’est plus viable vu la croissance exponentielle de Batemis.
-#.  Batemis doit généraliser son offre pour pouvoir sécuriser plus de sites.
-#.  L'équipe informatique de Batemis est assez limitée actuellement.
-#.  La conception de CyberBatiment a donc été confiée à l'IM2AG.
-#.  Un certain nombre de contraintes techniques ont été déjà mentionnées :
-#.  - le serveur de contrôle devra être développé impérativement en C++.
-#.  - les autres parties devront être développées en Python 2.7.
-#.  - la base de données résidant sur le serveur d'applications devra être Oracle.
-#.  - le framework Django sera utilisé pour tous les serveurs web.
-#.  - oracle est imposé par des accords commerciaux entre Oracle et Batemis.
-#.  Le choix de Python/Django est lié au fait que Batemis utilise déjà ces technologies en interne.
-#.  C++ est le choix standard dans ce domaine pour la programmation des contrôleurs.
-#.  Pour le matériel de sécurité, Batemis a passé un accord avec Bissis.
-#.  Bissis est un constructeur proposant du matériel extrêmement innovant.
-#.  En particulier Batemis a décidé de se baser des bissas (sas à deux portes) pour toutes ses offres.
-#.  Batemis et Bissis ont passé un accord pour mettre sur le marché des bissas le plus rapidement possible.
-#.  Bissis sera donc partie prenante pour le projet et fournira les bissas, avec leurs drivers.
-#.  Une prochaine réunion aura lieu dans les locaux de Bissis à Berlin pour étudier les bissas.
-#.  Différents organismes ont déjà contacté Batemis pour la mise en place de CyberBatiment.
-#.  La Fédération Française de Football désire sécuriser les stades de la coupe d'Europe 2016 en France.
-#.  La nouvelle région Auvergne Rhone-Alpes voudrait aussi sécuriser l'ensemble des lycées de la région par
-    des portiques d'accès.
-#.  Les sites des jeux olympique 2016 à Rio de Janeiro (Brésil) doivent également être sécurisées en urgence.
-#.  Plusieurs universités chinoises voudraient également migrer vers CyberBatiment en 2016.
-#.  Les commerciaux de Batemis prévoient une augmentation exponentielle des demandes au prochain trimestre.
-#.  CyberBatiment sera conçu et développé de façon incrémentale, en commençant par les fonctionnalités
-    les plus demandées par les clients.
-#.  Batemis a décidé d'imposer l'utilisation d'UML pour la conception de ce projet (et d'autres projets).
-#.  Plus particulièrement un accord a été passé avec ModelioSoft-Paris pour des licences Modelio.
-#.  Batemis utilisera une démarche agile pour s'assurer de l'adéquation du système avec les besoins des sites.
-#.  Pour initialiser le développement de l’ERP CyberBatiment, il a été décidé de prendre le stade Nilton-Santos des jeux
-    olympiques de Rio 2016, très illustratif des fonctionnalités les plus courantes.
-#.  Il est entendu par toutes les parties prenantes que le système spécifique développé pour
-    stade Nilton-Santos sera généralisé ensuite pour développer l'ERP, en rendant certains éléments paramètrables.
-#.  La conception de la version Nilton-Santos de Cyberbatiment a été confiée à l’IM2AG:
-#.  La prochaine réunion aura lieu à Rio en présence de Competis.
-#.  En conclusion, il a été observé que ce consortium international ne pourrait fonctionner qui si
-    toutes les parties prenantes parviennent à participer et à mettre en oeuvre leur savoir-faire.
-#.  Les différentes parties prenantes sont toutes conscientes des opportunités commerciales apportées
-    par ce nouveau contexte sécuritaire.
-#.  Seul un ERP comme CyberBatiment pourra répondre rapidement à l'étendue des besoins à venir.
+#. Le présent projet a été baptisé CyberBatiment.
+#. Les demandes de sécurisation de sites et de bâtiments se développent suites aux attentats des dernières années. Il s'agit d'une opportunité commerciale pour les sociétés de sécurité comme Batemis.
+#. La société Batemis est spécialisée dans les systèmes de contrôle d’accès.
+#. Batemis ne produit pas les équipements de sécurité, mais les assemblent et les installent.
+#. Jusqu’à présent les logiciels contrôlant ces équipement étaient développés à la demande pour chaque site.
+#. Batemis désire désormais se doter d’un ERP appelé CyberBatiment qui puisse se déployer sur différents types de sites, des usines, des lieux de cultes, des hôpitaux, des sites sportifs, des complexes commerciaux, des cités scolaires,
+#. Jusqu'à présent tout se faisait au cas par cas, y compris le développement/adaptation des logiciels.
+#. Ce modèle n’est plus viable vu la croissance exponentielle de Batemis.
+#. Batemis doit généraliser son offre pour pouvoir sécuriser plus de sites.
+#. L'équipe informatique de Batemis est assez limitée actuellement.
+#. La conception de CyberBatiment a donc été confiée à l'IM2AG.
+#. Un certain nombre de contraintes techniques ont été déjà mentionnées : 
+#. - le serveur de contrôle devra être développé impérativement en C++.
+#. - les autres parties devront être développées en Python 2.7.
+#. - la base de données résidant sur le serveur d'applications devra être Oracle.
+#. - le framework Django sera utilisé pour tous les serveurs web.
+#. - oracle est imposé par des accords commerciaux entre Oracle et Batemis.
+#. Le choix de Python/Django est lié au fait que Batemis utilise déjà ces technologies en interne.
+#. C++ est le choix standard dans ce domaine pour la programmation des contrôleurs.
+#. Pour le matériel de sécurité, Batemis a passé un accord avec Bissis.
+#. Bissis est un constructeur proposant du matériel extrêmement innovant.
+#. En particulier Batemis a décidé de se baser des bissas (sas à deux portes) pour toutes ses offres.
+#. Batemis et Bissis ont passé un accord pour mettre sur le marché des bissas le plus rapidement possible.
+#. Bissis sera donc partie prenante pour le projet et fournira les bissas, avec leurs drivers.
+#. Une prochaine réunion aura lieu dans les locaux de Bissis à Berlin pour étudier les bissas.
+#. Différents organismes ont déjà contacté Batemis pour la mise en place de CyberBatiment.
+#. La Fédération Française de Football désire sécuriser les stades de la coupe d'Europe 2016 en France.
+#. La nouvelle région Auvergne Rhone-Alpes voudrait aussi sécuriser l'ensemble des lycées de la région par des portiques d'accès
+#. Les sites des jeux olympique 2016 à Rio de Janeiro (Brésil) doivent également être sécurisées en urgence.
+#. Plusieurs universités chinoises voudraient également migrer vers CyberBatiment en 2016.
+#. Les commerciaux de Batemis prévoient une augmentation exponentielles des demandes au prochain trimestre.
+#. CyberBatiment sera conçu et développé de façon incrémentale, en commençant par les fonctionnalités les plus demandées par les clients.
+#. Batemis a décidé d'imposer l'utilisation d'UML pour la conception de ce projet (et d'autres projets).
+#. Plus particulièrement un accord a été passé avec ModelioSoft-Paris pour des licences Modelio.
+#. Batemis utilisera une démarche agile pour s'assurer de l'adéquation du système avec les besoins des sites.
+#. Pour initialiser le développement de l’ERP CyberBatiment, il a été décidé de prendre le stade Nilton-Santos des jeux olympique de Rio 2016, très illustratif des fonctionnalités les plus courantes,
+#. Il est entendu par toutes les parties prenantes que le système spécifique développé pour stade Nilton-Santos sera généralisé ensuite pour développer l'ERP, en rendant certains éléments paramètrables.
+#. La conception de la version Nilton-Santos de Cyberbatiment a été confiée à l’IM2AG  
+#. La prochaine réunion aura lieu à Rio en présence de Competis.
+#. En conclusion, il a été observé que ce consortium international ne pourrait fonctionner qui si toutes les parties prenantes parviennent à participer et à mettre en oeuvre leur savoir-faire.
+#. Les différentes parties prenantes sont toutes conscientes des opportunités commerciales apportées par ce nouveau contexte sécuritaire.
+#. Seul un ERP comme CyberBatiment pourra répondre rapidement à l'étendue des besoins à venir.
