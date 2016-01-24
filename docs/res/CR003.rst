@@ -33,10 +33,10 @@ CR003
 #. Un élément important concerne les règles à appliquer en cas d'incendie dans une zone.
 #. Tous les points d'accès doivent être ouverts automatiquement vers l’extérieur dans
    les zones dites "Incendie Libre" (IL).
-#. Dans les autres zones, un incident système est déclenché.
+#. Dans les autres zones, un incident est envoyé à tous les gardiens.
 #. Les gardiens peuvent ensuite prendre la décision de débloquer tel ou tel point d'accès.
 #. Il faudra donc prendre en compte les systèmes à incendie et les interfacer avec CyberBatiment.
-#. Renseignement pris auprès de AGO, il n'existe que 4 zones IL à Nilton-Santos;  les tribunes.
+#. Renseignement pris auprès de AGO, il n'existe que 4 zones IL à Nilton-Santos : les tribunes.
 #. Par ailleurs à première vue le nombre de groupes est a priori plus faible à Moroccoy qu'à Nilton-Santos.
 #. Le nombre de badgeurs par groupe va de 1 à 300 environ.
 #. Les ouvriers font les 3 x 8 mais de manière relativement régulière.
