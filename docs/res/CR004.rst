@@ -1,7 +1,7 @@
 CR004
 =====
 
-:Date: 2015-01-15-07h-20h
+:Date: 2016-01-15-07h-20h
 :Type: Réunion
 :PartiesPrenantes: KWG, CMS, YBI, MPA, ZSH
 :Lieu: Berlin-Bissis
@@ -29,17 +29,13 @@ CR004
    ont une vision globale des bissas tel qu'ils seront présentés dans quelques mois.
 #. Après quelques échanges et discussions animées, il est apparu que ce ne devrait cependant pas être un problème
    pour CyberBatiment.
-#. Bissis fournira des simulateurs physiques et électroniques pour que puissent commencer les tests lorsque nécessaires.
-#. Toutes les parties logicielles sur le serveur de contrôle (et évidemment sur le serveur d'applications) pourront
-   être réalisées en amont grâce à la simulation des signaux envoyés par les drivers des bissas et les caméras.
+#. Bissis fournira des simulateurs pour que puissent commencer les tests lorsque nécessaires.
+#. Toutes les parties logicielles sur le serveur applicatif pourront être réalisées en amont grâce à la simulation des bissas et des caméras pilotés par les drivers à installer sur le serveur de contrôle.
 #. Batemis, qui travaille depuis longtemps avec Bissis, est confiant dans cette démarche.
 #. L'utilisation d'une spécification UML a été soulignée comme un point essentiel dans ce contexte tendu.
-#. Il a été convenu que l'IM2AG fournirait rapidement des scénarios qui serviront à écrire les tests de la version
-   Nilton-Santo de Cyberbatiment.
-#. Il s'agit non seulement de tester les scénarios de passage sans incident, mais aussi les scénarios générant
-   des alarmes envoyées aux gardiens.
-#. En ce qui concerne les fonctionnalités des bissas, Bissis a proposé une illustration via l'étude d'un système
-   proposé par un de ses concurrents.
+#. Il a été convenu que l'IM2AG fournirait rapidement des scénarios qui serviront à écrire les tests de la version Nilton-Santo de Cyberbatiment.
+#. Il s'agit non seulement de tester les scénarios de passage sans incident, mais aussi les scénarios générant des alarmes envoyées aux gardiens.
+#. En ce qui concerne les fonctionnalités des bissas, Bissis a proposé une illustration via l'étude d'un système proposé par un de ses concurrents.
 #. Les bissas ressembleront *par certains côtés* au système "Cilindro Bibussola" de AllUserIndustrie_:
 
     .. _CR004Fig1:
@@ -58,20 +54,17 @@ CR004
 #. Ils peuvent ainsi contrôler à la fois l’entrée et la sortie.
 #. Ce qui permet a tout moment être capable de savoir qui est dans une zone.
 #. Cette fonction est nécessaire entre autre pour ne pas dépasser le nombre maximum de personnes autorisées par zone.
-#. Si une zone est pleine, une alerte système devra être générée pour que qu’un affichage le signale ou que les
-   gardiens soient prévenus de venir expliquer la situation.
+#. Si une zone est pleine, une alerte système devra être générée pour qu’un affichage le signale et que les gardiens soient prévenus de venir expliquer la situation.
 #. Les lecteurs des bissas sont polyvalents et permettent plusieurs types d'identification.
 #. Ils lisent différents types de badges papier, par exemple des QR codes.
 #. Ils peuvent lire également des cartes classiques ou sans contact (jusqu'à 1m).
-#. Quelque soit le type de badge, les informations envoyées par le driver du bisas au serveur de contrôle sont toujours
-   identiques.
+#. Quelque soit le type de badge, les informations envoyées par le driver du bisas au serveur de contrôle sont toujours identiques.
 #. La première information est le numéro du point d’accès dans le site.
 #. La seconde information est le numéro du bissas dans ce point d’accès
 #. La troisième information est la face sur laquelle le badge a été lu (A ou B).
 #. La dernière information est le "bCode" (code badge) lu par le lecteur de badge.
-#. Les lecteurs sont équipés de deux leds (une rouge et verte) pouvant être programmées.
-#. Deux détecteurs de chaque coté permettent simplement d'envoyer des signaux lorsqu'une porte arrive en position
-   ouverte ou en position fermée.
+#. Les lecteurs sont équipés de deux leds (une rouge et verte).
+#. Deux détecteurs de chaque coté permettent au bissas de signaler lorsqu'une porte arrive en position ouverte ou en position fermée.
 #. Tout comme le Cilindro Bibussola, les bissas possèdent un détecteur de présence à l'intérieur du sas.
 #. Selon le nombre de personnes (0, 1 ou plus) détectées, le bisas retourne le signal E, OK ou KO .
 #. Cela permettra de programmer une fonction d'*anti piggybacking* sur le serveur de contrôle.
@@ -90,18 +83,14 @@ CR004
 #. Les bissas Astra sont destinés à recevoir un public important.
 #. C'est pour cela que Batemis préconise leur utilisation sur Nilton-Santos.
 #. Les bisas Xtra sont écartés car leur débit est insuffisant.
-#. Les bissas Astra permettent entre autre d'organiser des files d'attentes uniques par point d'accès.
+#. Les bissas Astra permettent entre autres d'organiser des files d'attentes uniques par point d'accès.
 #. Ils sont munis d'un feu visible depuis la file indiquant l'état du bissas
    (disponible = vert, rouge = utilisé, orange = bientôt libre).
-#. Ce feu tricolore permet de montrer avec 2 secondes d'anticipation le prochain bissas Astra disponible
-   (voyant orange).
-#. Pour cela, un détecteur de présence à l’intérieur fait passer le feu au orange lorsqu'un badgeur la second porte
-   s’ouvre pour le badgeur.
+#. Ce feu tricolore permet de montrer avec 2 secondes d'anticipation le prochain bissas Astra disponible (voyant orange).
+#. Pour cela, un détecteur de présence à l’intérieur fait passer le feu au orange lorsqu'un badgeur la second porte s’ouvre pour le badgeur.
 #. Un détecteur à l’extérieur fait passer le feu au rouge lorsqu'un badgeur est à proximité.
-#. En fait, une fois de plus, ce genre de fonctionnalités est prédfini et intégré au bissas et n’a pas besoin d’être
-   commandé par le driver sur le serveur de contrôle.
-#. Batemis insiste de nouveau sur le fait que différents scénarios devront donner lieu à des incidents envoyés
-   aux gardiens.
+#. En fait, une fois de plus, ce genre de fonctionnalités est prédfini et intégré au bissas et n’a pas besoin d’être commandé par le driver sur le serveur de contrôle.
+#. Batemis insiste de nouveau sur le fait que différents scénarios devront donner lieu à des incidents envoyés aux gardiens.
 #. C'est le cas par exemple si un badgeur ne sort pas du sas au bout de 8 secondes.
 #. C'est également le cas si quelqu'un bloque la porte avec un pied, etc.
 #. Batemis propose aussi des bissas haute sécurité, les bissas Xtra.
@@ -112,40 +101,28 @@ CR004
 #. Si la personne n'est pas autorisée un incident système sera généré par le bissas Xtra.
 #. Il en sera de même si le détecteur de métaux intégré dans les Xtra se déclenche.
 #. Le badgeur sera alors bloqué dans le sas et devra attendre qu'un gardien vienne le débloquer.
-#. Une fois de plus Bissis propose le matériel pour permettre cela, mais les fonctions devront être réalisées sur
-   le serveur de contrôle en fonction des signaux émis par les bissas.
-#. Evidemment les digitCodes et faceCodes (transmis respectivement par le lecteur d'empreinte digitale et le
-   lecteur facial), devront être comparés aux données disponibles sur le serveur applicatif.
-#. Dans CyberBatiment ce sont les administrateurs de groupes qui seront chargés, en plus de la délivrance des
-   badges selon la procédure normalle, de collecter les empreintes digitales et les portraits des
-   badgeurs haute sécurité.
+#. Une fois de plus Bissis propose le matériel pour permettre cela, mais les fonctions devront être réalisées sur le serveur de contrôle en fonction des signaux émis par les bissas.
+#. Evidemment les digitCodes et faceCodes (transmis respectivement par le lecteur d'empreinte digitale et le lecteur facial), devront être comparés aux données disponibles sur le serveur applicatif.
+#. Dans CyberBatiment ce sont les administrateurs de groupes qui seront chargés, en plus de la délivrance des badges selon la procédure normalle, de collecter les empreintes digitales et les portraits des badgeurs haute sécurité.
 #. L'identification physique des badgeurs dans un Xtra devra se faire en moins de 5 secondes.
-#. L'identification des badges et surtout le calcul des autorisations lors d'un passage de badge devra toujours
-   pouvoir être faite en moins de 2 secondes.
-#. Sachant que l'on envisage plus de 200 entrées ou sorties simultanément un soin tout particulier devra être
-   apporté à cet aspect.
+#. L'identification des badges et surtout le calcul des autorisations lors d'un passage de badge devra toujours pouvoir être faite en moins de 2 secondes.
+#. Sachant que l'on envisage plus de 200 entrées ou sorties simultanément un soin tout particulier devra être apporté à cet aspect.
 #. Bissis propose également d'autres éléments matériels pour la sécurité.
 #. Des caméras directionnelles C800 pourront être installées comme option de l’ERP CyberBatiment.
 #. Les gardiens devront pouvoir à tout moment les ré-orienter à distance.
-#. Les plans de sécurité proposés par Batemis pour Morrocoy et Nilton-Santos sont déjà basés sur l'utilisation de
-   ce matériel.
+#. Les plans de sécurité proposés par Batemis pour Morrocoy et Nilton-Santos sont déjà basés sur l'utilisation de ce matériel.
 #. Cependant pour des raisons de délai, les caméras ne seront pas connectées à CyberBatiment pour Nilton-Santos
-#. Les bissas doivent être reliés au serveur de contrôle du site via des liaisons "RFC 321"; les caméras via des
-   liaisons "RFC 821".
+#. Les bissas doivent être reliés au serveur de contrôle du site via des liaisons "RFC 321"; les caméras via des liaisons "RFC 821".
 #. Le matériel et les protocoles associés sont en cours d'être brevetés par Bissis.
 #. Il doit y a une salle de contrôle par site; elle contient le serveur de contrôle.
-#. Il s'agit d'un matériel spécialisé quasi temps réél auquel de multiples câbles sont connectés sur un panneau
-   de brassage (jusqu'à des centaines sur certains sites).
+#. Il s'agit d'un matériel spécialisé quasi temps réél auquel de multiples câbles sont connectés sur un panneau de brassage (jusqu'à des centaines sur certains sites).
 #. Ce serveur de contrôle devra être connecté au serveur applicatif via une liaison TCP/IP sécurisée.
 #. Seuls les gardiens doivent avoir accès à la salle de contrôle.
-#. En conclusion de cette réunion (longue), il apparaît clairement que les technologies innovantes proposées
-   par Bissis en font un partenaire idéal.
-#. De plus, le matériel n'étant pas disponible à ce jour, il est essentiel de préparer les scénarios à prendre en
-   compte et de les spécifier de manière rigoureuse.
+#. En conclusion de cette réunion (longue), il apparaît clairement que les technologies innovantes proposées par Bissis en font un partenaire idéal.
+#. De plus, le matériel n'étant pas disponible à ce jour, il est essentiel de préparer les scénarios à prendre en compte et de les spécifier de manière rigoureuse.
 #. Bissis fournira des simulateurs matériels pilotables par le driver fourni.
 #. Dans un premier temps des tests seront ainsi effectués à partir des scénarios fournis par IM2AG.
-#. Une réunion est prévue (2016-01-18) pour discuter des points non abordés jusque là et notamment de
-   l'architecture de déploiement.
+#. Une réunion est prévue (2016-01-18) pour discuter des points non abordés jusque là et notamment de l'architecture de déploiement.
 
 
 .. ............................................................................
