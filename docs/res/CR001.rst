@@ -29,7 +29,7 @@ CR001
 #. Les demandes de sécurisation de sites et de bâtiments se développent suites aux attentats des dernières années. Il s'agit d'une opportunité commerciale pour les sociétés de sécurité comme Batemis.
 #. La société Batemis est spécialisée dans les systèmes de contrôle d’accès.
 #. Batemis ne produit pas les équipements de sécurité, mais les assemblent et les installent.
-#. Jusqu’à présent les logiciels contrôlant ces équipement étaient développés à la demande pour chaque site.
+#. Jusqu’à présent les logiciels contrôlant ces équipements étaient développés à la demande pour chaque site.
 #. Batemis désire désormais se doter d’un ERP appelé CyberBatiment qui puisse se déployer sur différents types de sites, des usines, des lieux de cultes, des hôpitaux, des sites sportifs, des complexes commerciaux, des cités scolaires,
 #. Jusqu'à présent tout se faisait au cas par cas, y compris le développement/adaptation des logiciels.
 #. Ce modèle n’est plus viable vu la croissance exponentielle de Batemis.
@@ -55,7 +55,7 @@ CR001
 #. La nouvelle région Auvergne Rhone-Alpes voudrait aussi sécuriser l'ensemble des lycées de la région par des portiques d'accès
 #. Les sites des jeux olympique 2016 à Rio de Janeiro (Brésil) doivent également être sécurisées en urgence.
 #. Plusieurs universités chinoises voudraient également migrer vers CyberBatiment en 2016.
-#. Les commerciaux de Batemis prévoient une augmentation exponentielles des demandes au prochain trimestre.
+#. Les commerciaux de Batemis prévoient une augmentation exponentielle des demandes au prochain trimestre.
 #. CyberBatiment sera conçu et développé de façon incrémentale, en commençant par les fonctionnalités les plus demandées par les clients.
 #. Batemis a décidé d'imposer l'utilisation d'UML pour la conception de ce projet (et d'autres projets).
 #. Plus particulièrement un accord a été passé avec ModelioSoft-Paris pour des licences Modelio.
