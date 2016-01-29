@@ -41,7 +41,7 @@ CR001
 #. - les autres parties devront être développées en Python 2.7.
 #. - la base de données résidant sur le serveur d'applications devra être Oracle.
 #. - le framework Django sera utilisé pour tous les serveurs web.
-#. - oracle est imposé par des accords commerciaux entre Oracle et Batemis.
+#. Oracle est imposé par des accords commerciaux entre Oracle et Batemis.
 #. Le choix de Python/Django est lié au fait que Batemis utilise déjà ces technologies en interne.
 #. C++ est le choix standard dans ce domaine pour la programmation des contrôleurs.
 #. Pour le matériel de sécurité, Batemis a passé un accord avec Bissis.
@@ -60,9 +60,9 @@ CR001
 #. Batemis a décidé d'imposer l'utilisation d'UML pour la conception de ce projet (et d'autres projets).
 #. Plus particulièrement un accord a été passé avec ModelioSoft-Paris pour des licences Modelio.
 #. Batemis utilisera une démarche agile pour s'assurer de l'adéquation du système avec les besoins des sites.
-#. Pour initialiser le développement de l’ERP CyberBatiment, il a été décidé de prendre le stade Nilton-Santos des jeux olympique de Rio 2016, très illustratif des fonctionnalités les plus courantes,
-#. Il est entendu par toutes les parties prenantes que le système spécifique développé pour stade Nilton-Santos sera généralisé ensuite pour développer l'ERP, en rendant certains éléments paramètrables.
-#. La conception de la version Nilton-Santos de Cyberbatiment a été confiée à l’IM2AG  
+#. Pour initialiser le développement de l’ERP CyberBatiment, il a été décidé de prendre le stade Nílton-Santos des jeux olympique de Rio 2016, très illustratif des fonctionnalités les plus courantes,
+#. Il est entendu par toutes les parties prenantes que le système spécifique développé pour stade Nílton-Santos sera généralisé ensuite pour développer l'ERP, en rendant certains éléments paramètrables.
+#. La conception de la version Nílton-Santos de Cyberbatiment a été confiée à l’IM2AG  
 #. La prochaine réunion aura lieu à Rio en présence de Competis.
 #. En conclusion, il a été observé que ce consortium international ne pourrait fonctionner qui si toutes les parties prenantes parviennent à participer et à mettre en oeuvre leur savoir-faire.
 #. Les différentes parties prenantes sont toutes conscientes des opportunités commerciales apportées par ce nouveau contexte sécuritaire.
