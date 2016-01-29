@@ -114,7 +114,7 @@ CR004
 #. Cependant pour des raisons de délai, les caméras ne seront pas connectées à CyberBatiment pour Nílton-Santos
 #. Les bissas doivent être reliés au serveur de contrôle du site via des liaisons "RFC 321"; les caméras via des liaisons "RFC 821".
 #. Le matériel et les protocoles associés sont en cours d'être brevetés par Bissis.
-#. Il doit y a une salle de contrôle par site; elle contient le serveur de contrôle.
+#. Il doit y avoir une salle de contrôle par site; elle contient le serveur de contrôle.
 #. Il s'agit d'un matériel spécialisé quasi temps réel auquel de multiples câbles sont connectés sur un panneau de brassage (jusqu'à des centaines sur certains sites).
 #. Ce serveur de contrôle devra être connecté au serveur applicatif via une liaison TCP/IP sécurisée.
 #. Seuls les gardiens doivent avoir accès à la salle de contrôle.
