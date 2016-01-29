@@ -36,8 +36,8 @@ CR003
 #. Dans les autres zones, un incident est envoyé à tous les gardiens.
 #. Les gardiens peuvent ensuite prendre la décision de débloquer tel ou tel point d'accès.
 #. Il faudra donc prendre en compte les systèmes à incendie et les interfacer avec CyberBatiment.
-#. Renseignement pris auprès de AGO, il n'existe que 4 zones IL à Nilton-Santos : les tribunes.
-#. Par ailleurs à première vue le nombre de groupes est a priori plus faible à Moroccoy qu'à Nilton-Santos.
+#. Renseignement pris auprès de AGO, il n'existe que 4 zones IL à Nílton-Santos : les tribunes.
+#. Par ailleurs à première vue le nombre de groupes est a priori plus faible à Moroccoy qu'à Nílton-Santos.
 #. Le nombre de badgeurs par groupe va de 1 à 300 environ.
 #. Les ouvriers font les 3 x 8 mais de manière relativement régulière.
 #. Les membres de chaque groupe sont finalement assez stables.
@@ -88,11 +88,11 @@ CR003
         |     |         | 17/02/15 - 18/02/15              |       |
         +-----+---------+----------------------------------+-------+
 
-#. Les autorisations sous forme de triplets pourraient aussi convenir à priori pour Nilton-Santos/RIO 2016.
+#. Les autorisations sous forme de triplets pourraient aussi convenir à priori pour Nílton-Santos/RIO 2016.
 #. Il s'agit en effet d'une représentation générale et sans doute satisfaisante.
 #. Il a été décidé de partir a priori sur ce modèle d'autorisation pour CyberBatiment.
 #. Dans le cas de Morrocoy, il semble qu'un seul administrateur pourrait gérer tous les groupes.
-#. Cela contraste avec le site de Nilton-Santos où plusieurs administrateurs devront gérer des groupes différents
+#. Cela contraste avec le site de Nílton-Santos où plusieurs administrateurs devront gérer des groupes différents
    et inversement ou un même groupe pourra être géré par des administrateurs différents.
 #. Actuellement l'usine est gardée par 60 gardiens, 24/24.
 #. Avec CyberBatiment on estime que 4 gardiens seraient suffisant, d'où 12 en 3x8.
@@ -111,9 +111,9 @@ CR003
    (e.g. heures d'accès des gardiens, etc).
 #. Le service web d'import sera utilisé entre autre par les services commerciaux pour déterminer les billets
    vendus n'ayant pas été utilisés.
-#. Après discussion avec Competis, l'historique d'accès sera également nécessaire pour Nilton-Santos/RIO 2016
+#. Après discussion avec Competis, l'historique d'accès sera également nécessaire pour Nílton-Santos/RIO 2016
    vu le contexte d’attentats.
 #. En conclusion, les besoins relatifs au site de Morrocoy sont tout à fait pertinents pour CyberBatiment.
-#. Ce cas d'étude est assez complémentaire par rapport à Nilton-Santos.
+#. Ce cas d'étude est assez complémentaire par rapport à Nílton-Santos.
 #. Batemis a donc décidé de le prendre en compte pour la définition des paramètres de l’ERP CyberBatiment.
 #. La prochaine réunion aura lieu comme prévu à Berlin - Bissis.
