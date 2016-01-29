@@ -62,7 +62,7 @@ CR003
 #. Les groupes du planning annuel sont homogènes par rapport aux zones autorisées.
 #. Autrement dit, pour une période un groupe peut accéder toujours aux mêmes zones (cf CR003Fig2_)
    indépendamment de la période.
-#. En réalité, et selon un exemple donné par ELL, certains groupes (e.g. GX et GY) peuvent accèder à la zone PT et PO
+#. En réalité, et selon un exemple donné par ELL, certains groupes (e.g. GX et GY) peuvent accéder à la zone PT et PO
    en semaine de 22h à 6h pendant l'été.
 #. Mais de plus GX peut en plus accéder à la zone X et DM le week end de 23h à 5h de mars à avril, et sans doute
    le 17 et 18 février à n'importe quelle heure.
