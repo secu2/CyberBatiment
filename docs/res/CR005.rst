@@ -20,7 +20,7 @@ CR005
    vérification des autorisations, la gestion de l'historique, l'enregistrement des incidents, etc.
 #. Le serveur d'applications doit être plus ou moins puissant selon le volume de données à gérer et le nombre de
    transactions à mettre en oeuvre.
-#. Pour les sites de Nilton-Santos ou de Morrocoy, il n'y aura a priori pas de soucis, mais Batemis a déjà eu affaire
+#. Pour les sites de Nílton-Santos ou de Morrocoy, il n'y aura a priori pas de soucis, mais Batemis a déjà eu affaire
    à des sites avec plus de 800 points d'accès, 80 000 badgeurs, avec des historiques à conserver sur 5 ans
    (base militaire en Sibérie).
 #. De tels clients devront pouvoir être gérés avec l’ERP CyberBatiment.
@@ -38,7 +38,7 @@ CR005
     .. figure:: media/samsung.jpg
         :align: center
 
-        Fig2: Smartphone Galaxy Note destiné aux gardiens
+        Fig. 1 : Smartphone Galaxy Note destiné aux gardiens
 
 #. Les incidents doivent être localisés (e.g. bissas, point d'accès et/ou zone).
 #. Les incidents détecté par CyberBatiment comprennent les incidents d’accès et les autres incident (métaux détectés
