@@ -54,7 +54,7 @@ CR004
 #. Ils peuvent ainsi contrôler à la fois l’entrée et la sortie.
 #. Ce qui permet a tout moment être capable de savoir qui est dans une zone.
 #. Cette fonction est nécessaire entre autre pour ne pas dépasser le nombre maximum de personnes autorisées par zone.
-#. Si une zone est pleine, une alerte système devra être générée pour qu’un affichage le signale et que les gardiens soient prévenus de venir expliquer la situation.
+#. Si une zone est pleine, une alerte devra être générée pour qu’un affichage le signale et que les gardiens soient prévenus de venir expliquer la situation.
 #. Les lecteurs des bissas sont polyvalents et permettent plusieurs types d'identification.
 #. Ils lisent différents types de badges papier, par exemple des QR codes.
 #. Ils peuvent lire également des cartes classiques ou sans contact (jusqu'à 1m).
@@ -87,8 +87,8 @@ CR004
 #. Ils sont munis d'un feu visible depuis la file indiquant l'état du bissas
    (disponible = vert, rouge = utilisé, orange = bientôt libre).
 #. Ce feu tricolore permet de montrer avec 2 secondes d'anticipation le prochain bissas Astra disponible (voyant orange).
-#. Pour cela, un détecteur de présence à l’intérieur fait passer le feu au orange lorsqu'un badgeur la seconde porte s’ouvre pour le badgeur.
-#. Un détecteur à l’extérieur fait passer le feu au rouge lorsqu'un badgeur est à proximité.
+#. Pour cela, un détecteur de présence à l’intérieur fait passer le feu au orange lorsqu'un badgeur est présent et que la seconde porte s’ouvre.
+#. Un détecteur à l’extérieur fait passer le feu au rouge lorsque le bissas est libre et qu'un badgeur est à proximité.
 #. En fait, une fois de plus, ce genre de fonctionnalités est prédéfini et intégré au bissas et n’a pas besoin d’être commandé par le driver sur le serveur de contrôle.
 #. Batemis insiste de nouveau sur le fait que différents scénarios devront donner lieu à des incidents envoyés aux gardiens.
 #. C'est le cas par exemple si un badgeur ne sort pas du sas au bout de 8 secondes.
