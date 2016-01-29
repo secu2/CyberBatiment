@@ -2,7 +2,7 @@ CR005
 =====
 
 :Date: 2015-01-18-12h-17h
-:Type: Reunion
+:Type: Réunion
 :PartiesPrenantes: ABI, HSI, KWG, MPA, PSO
 :Lieu: Paris-Batemis
 :Organisateur: ABI
@@ -29,7 +29,7 @@ CR005
 #. Il a été décidé d'utiliser des Smartphones Android de marque Samsung pour la taille de leurs écrans et leur puissance
    de calcul.
 #. C'est un grand changement car jusque là des appareils spécialisés ou des postes fixes étaient utilisés.
-#. Les smartphones gardiens seront connectés via *https* et un réseau wifi interne sécurisé au serveur web interne.
+#. Les smartphones gardiens seront connectés au serveur web interne via *https* et un réseau wifi interne sécurisé.
 #. Batemis mentionne qu'il est possible d'installer des systèmes de brouillage et bien d'autres choses,
    qui rendent ce réseau à la fois sûr et fiable.
 
@@ -65,13 +65,13 @@ CR005
 #. Les gardiens peuvent alors sélectionner  nécessaires lors de scénarios types.
 #. Evidemment si nécessaire les gardiens peuvent utiliser la fonction téléphone de leur Smartphone pour appeler
    les services compétents (urgences, police, armée, etc.)
-#. La discussion sur le rôle des gardiens s'est achevé sur la conclusion suivante.
+#. La discussion sur le rôle des gardiens s'est achevée sur la conclusion suivante.
 #. L'IHM des gardiens doit être particulièrement ergonomique vu le contexte d'utilisation à la fois quotidien et
    potentiellement intensif.
 #. _
 #. En ce qui concerne le poste superviseur (toujours un seul, pour des raisons de sécurité) et les postes
    administrateurs (autant que nécessaire), ceux-ci seront également connectés au serveur applicatif par une
-   liaison ethernet, avec un client léger utilisant le protocole https.
+   liaison Ethernet, avec un client léger utilisant le protocole https.
 #. Il s'agit dans les deux cas de PCs sous Windows dotés du navigateur Chrome.
 #. _
 #. Les administrateurs gèrent non seulement les inscriptions des badgeurs, mais aussi les problèmes liés à la
@@ -79,7 +79,7 @@ CR005
 #. Lorsqu'un badge est perdu, volé (y compris via agression), le badgeur est tenu d'en informer immédiatement
    le centre de sécurité.
 #. Cela ne concerne pas les tickets avec des badges papier, qui sont gérés directement par société qui les vend.
-#. Queleque soit le type de badge, un badge est toujours associé à une seule personne à la fois et une personne
+#. Quelque soit le type de badge, un badge est toujours associé à une seule personne à la fois et une personne
    ne peut posséder qu'un badge (pour un site) à un moment donné.
 #. Les badgeurs sont connus au minimum par leur nom et leur prénom et un numéro d'identité national (NIN).
 #. Le NIN utilisé dépend des personnes et des pays considérés.
