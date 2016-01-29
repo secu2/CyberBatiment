@@ -39,7 +39,7 @@ CR001
 #. Un certain nombre de contraintes techniques ont été déjà mentionnées : 
 #. - le serveur de contrôle devra être développé impérativement en C++.
 #. - les autres parties devront être développées en Python 2.7.
-#. - la base de données résidant sur le serveur d'applications devra être Oracle.
+#. - la base de données résidant sur le serveur d'applications devra être Oracle. 
 #. - le framework Django sera utilisé pour tous les serveurs web.
 #. Oracle est imposé par des accords commerciaux entre Oracle et Batemis.
 #. Le choix de Python/Django est lié au fait que Batemis utilise déjà ces technologies en interne.
