@@ -8,7 +8,7 @@ CR002
 :Organisateur: ABI
 :Rapporteur: KWG
 :Presents: ABI, JDR, PSO, AGO
-:Objectifs: Cas d'étude Nilton-Santos/Rio de Janeiro
+:Objectifs: Cas d'étude Nílton-Santos/Rio de Janeiro
 
 .. attention::
     Ce compte rendu est un *document de travail* et n'est pas contractuel.
@@ -16,7 +16,7 @@ CR002
 
 #. Nouvel intervenant:
 #. _ Apito GUARACARUMBO (AGO) - Competis, San Juan de Los Morros
-#. La réunion a eu lieu sur le site du stade Nilton-Santos à Rio de Janeiro, guidé par AGO.
+#. La réunion a eu lieu sur le site du stade Nílton-Santos à Rio de Janeiro, guidé par AGO.
 #. Le site n'est actuellement pas équipé.
 #. Il devra l'être pour les JO 2016 qui auront lieu en Août.
 #. Grâce aux bissas, cette installation a été considérée comme viable par Batemis.
@@ -31,7 +31,7 @@ CR002
     .. figure:: media/stade.png
         :align: center
 
-        Fig1: Le stade Nilton-Santos à Rio, un exemple de site à gérer par CyberBatiment
+        Fig. 1 : Le stade Nílton-Santos à Rio, un exemple de site à gérer par CyberBatiment
 
 #. Les différentes zones du site ont été représentées sur le plan sécurité.
 #. Par contre les bâtiments, installations et autres espaces non sécurisés n'y sont pas.
@@ -49,7 +49,7 @@ CR002
     .. figure:: media/billet.png
         :align: center
 
-        Fig2: Exemple de billet faisant office de badge grâce au QR code
+        Fig. 2 : Exemple de billet faisant office de badge grâce au QR code
 
 #. Pendant RIO 2016 les athlètes accéderont au village sportif, au restaurant, et à leur bâtiment.
 #. Ils pourront aussi aller en salle de presse et à l'administration de 8h à 17h.
@@ -81,8 +81,8 @@ CR002
     .. figure:: media/import.png
         :align: center
 
-        Fig3: Exemple de fichier généré par Competis - Exemple Competis 2016_01_05
+        Fig. 3 : Exemple de fichier généré par Competis - Exemple Competis 2016_01_05
 
 #. La transmission des données entre CyberCompetition et Cyberbatiment devra se faire via un web service sécurisé.
-#. En conclusion, la visite sur le site de Nilton-Santos à Rio a été très instructive.
+#. En conclusion, la visite sur le site de Nílton-Santos à Rio a été très instructive.
 #. Il correspond bien aux fonctionnalités de base que devra permettre l’ERP CyberBatiment à terme.
