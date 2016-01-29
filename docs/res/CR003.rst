@@ -88,7 +88,7 @@ CR003
         |     |         | 17/02/15 - 18/02/15              |       |
         +-----+---------+----------------------------------+-------+
 
-#. Les autorisations sous forme de triplets pourraient aussi convenir à priori pour Nílton-Santos/RIO 2016.
+#. Les autorisations sous forme de triplets pourraient aussi convenir a priori pour Nílton-Santos/RIO 2016.
 #. Il s'agit en effet d'une représentation générale et sans doute satisfaisante.
 #. Il a été décidé de partir a priori sur ce modèle d'autorisation pour CyberBatiment.
 #. Dans le cas de Morrocoy, il semble qu'un seul administrateur pourrait gérer tous les groupes.
