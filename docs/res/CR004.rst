@@ -58,7 +58,7 @@ CR004
 #. Les lecteurs des bissas sont polyvalents et permettent plusieurs types d'identification.
 #. Ils lisent différents types de badges papier, par exemple des QR codes.
 #. Ils peuvent lire également des cartes classiques ou sans contact (jusqu'à 1m).
-#. Quelque soit le type de badge, les informations envoyées par le driver du bisas au serveur de contrôle sont toujours identiques.
+#. Quelque soit le type de badge, les informations envoyées par le driver du bissas au serveur de contrôle sont toujours identiques.
 #. La première information est le numéro du point d’accès dans le site.
 #. La seconde information est le numéro du bissas dans ce point d’accès
 #. La troisième information est la face sur laquelle le badge a été lu (A ou B).
