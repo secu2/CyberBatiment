@@ -4,7 +4,7 @@ Audit V1
 Exigences
 ---------
 
-#. Le projet doit être nommé CyberBatiment
+#. Le projet doit être nommé CyberBatiment - *Ok*
 #. les autres parties doivent être développées en Python 2.7
 #. le développement sera accompagné des tests des différents scénarios
 #. Un web service permet la transmission de quelques informations entre
@@ -15,23 +15,23 @@ Exigences
    paye et de contrôle de présence, d'importer les événements d'accès
    il doit aussi permettre aux services commerciaux de déterminer les
    billets vendus qui n'ont pas été utilisés
-#. Le systeme doit donner l'acces a une zone par rapport au [groupe] de [badgeur] (gardien,journaliste ..)
+#. Le systeme doit donner l'acces a une zone par rapport au [groupe] de [badgeur] (gardien,journaliste ..) *Système n'est pas un terme clair, manque la notion d'heure qui va avec le groupe, éviter les parenthèses*
 #. Batemis et Bissis ont passé un accord pour mettre sur le marché des bissas le plus
-   rapidement possible.
-#. Les méthodes agiles doivent être employées lors du développement
+   rapidement possible. *Défnir batémis, bisas. De plus ce n'est pas une exigence dans le sens ou cette info n'intéresse pas le développeur*
+#. Les méthodes agiles doivent être employées lors du développement *Exigence pas très mûre, a ajouter dans le fichier des questions*
 #. Les équipements doivent permettre les sorties libres dans les zones "Incendie
-   Libre"
-#. Dans les zones non incendie libre, déclencher un [incident] système
-#. Logiciels Externes | analyzer.
-#. Le systeme doit avoir une service web accessible par autres applications externes pour importer les evenements
-#. Le [système] doit permettre de comparer les digitCodes et les faceCodes
-#. L'équipe de développeurs est limitée en nombre | Technique
-#. Le [système] doit pouvoir comprendre entre 1 et 300 badges | Technique
-#. Des logiciels externes devront pouvoir gérer les membres d’un [groupe] les jours fériés et les week end | Performance | idem marche, croissance,production gros sous sous : déploiement
-#. Les empreintes digitales ainsi que les portraits doivent être comparés aux données enregistrées les concernant
-#. Les badges des visiteurs sont des QR-codes générés en ligne
-#. Accès illimité au village sportif, restaurant et à leur bâtiment
-#. l’usine devant tourner 24h/24h, 365j/365, des groupes d’ouvriers sont ajoutés pour
+   Libre" *Défnir Incendie libre et sortie libre*
+#. Dans les zones non incendie libre, déclencher un [incident] système *En cas d’incendie?*
+#. Logiciels Externes | analyzer. *...*
+#. Le systeme doit avoir une service web accessible par autres applications externes pour importer les evenements *Quelles autres applications externes, préciser.*
+#. Le [système] doit permettre de comparer les digitCodes et les faceCodes *Quand?*
+#. L'équipe de développeurs est limitée en nombre | Technique *A supprimer*
+#. Le [système] doit pouvoir comprendre entre 1 et 300 badges | Technique *Pour l’usine, pas pour le stade*
+#. Des logiciels externes devront pouvoir gérer les membres d’un [groupe] les jours fériés et les week end | Performance | idem marche, croissance,production gros sous sous : déploiement *Manque de sérieux, peut porter préjudice*
+#. Les empreintes digitales ainsi que les portraits doivent être comparés aux données enregistrées les concernant *Flou, on ne sait pas ce qu’est un portrait*
+#. Les badges des visiteurs sont des QR-codes générés en ligne *Ce n’est pas notre travail (complétis)*
+#. Accès illimité au village sportif, restaurant et à leur bâtiment *Pas de concept sportif à avoir si on veut que notre logiciel soit générique*
+#. l’usine devant tourner 24h/24h, 365j/365, des groupes d’ouvriers sont ajoutés pour *Même problème, éviter la notion d’usine*
 #. L'échange de données se fera via un Web Service Sécurisé
 #. Batemis a décidé de se baser des [bissas] (sas à deux portes) pour toutes ses offres.
 #. Les ordinateurs de contrôle pour les superviseurs et administrateurs seront des PC sous Windows dotés du navigateur Chrome.
@@ -154,7 +154,7 @@ Lexique
 #. Superviseur | Leader, manager d'un projet, évenement
 #. Course d'endurance, ou participe plusieurs [sportifs], avec un vainqueurs à la fin de celle-ci
 #. Autorisation | Une autorisation est un "laisser passer" définit pour un [groupe] durant une période défini
-#. Serveur de contrôl | L'ERP développé
+#. Serveur de contrôl | L'ERP développé
 #. triplet | C'est de mentionner le groupe avec la zone concerné pour une periode donnée
 #. Système | L'ERP développé
 #. CyberBatiment | L'ERP développé
@@ -162,3 +162,5 @@ Lexique
 
 Questions et Hypothèses
 -----------------------
+
+
