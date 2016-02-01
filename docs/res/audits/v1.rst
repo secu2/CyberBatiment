@@ -1,0 +1,164 @@
+Audit V1
+========
+
+Exigences
+---------
+
+#. Le projet doit être nommé CyberBatiment
+#. les autres parties doivent être développées en Python 2.7
+#. le développement sera accompagné des tests des différents scénarios
+#. Un web service permet la transmission de quelques informations entre
+   {CyberCompetition} et Cyberbatiment.
+   Les informations transmises seront :date ,nom,prenom, nationalite,
+   type ticket,id ticket,période début, période fin,qrcode,prix,siège
+#. ce Web service doit permettre aux systèmes externes tels que : système de
+   paye et de contrôle de présence, d'importer les événements d'accès
+   il doit aussi permettre aux services commerciaux de déterminer les
+   billets vendus qui n'ont pas été utilisés
+#. Le systeme doit donner l'acces a une zone par rapport au [groupe] de [badgeur] (gardien,journaliste ..)
+#. Batemis et Bissis ont passé un accord pour mettre sur le marché des bissas le plus
+   rapidement possible.
+#. Les méthodes agiles doivent être employées lors du développement
+#. Les équipements doivent permettre les sorties libres dans les zones "Incendie
+   Libre"
+#. Dans les zones non incendie libre, déclencher un [incident] système
+#. Logiciels Externes | analyzer.
+#. Le systeme doit avoir une service web accessible par autres applications externes pour importer les evenements
+#. Le [système] doit permettre de comparer les digitCodes et les faceCodes
+#. L'équipe de développeurs est limitée en nombre | Technique
+#. Le [système] doit pouvoir comprendre entre 1 et 300 badges | Technique
+#. Des logiciels externes devront pouvoir gérer les membres d’un [groupe] les jours fériés et les week end | Performance | idem marche, croissance,production gros sous sous : déploiement
+#. Les empreintes digitales ainsi que les portraits doivent être comparés aux données enregistrées les concernant
+#. Les badges des visiteurs sont des QR-codes générés en ligne
+#. Accès illimité au village sportif, restaurant et à leur bâtiment
+#. l’usine devant tourner 24h/24h, 365j/365, des groupes d’ouvriers sont ajoutés pour
+#. L'échange de données se fera via un Web Service Sécurisé
+#. Batemis a décidé de se baser des [bissas] (sas à deux portes) pour toutes ses offres.
+#. Les ordinateurs de contrôle pour les superviseurs et administrateurs seront des PC sous Windows dotés du navigateur Chrome.
+#. Une autorisation doit être un triplet ([groupe](s),période(s),zone(s)).
+#. Si un badgeur appartient à plusieurs groupes et que ces groupes sont gérés
+   par plusieurs administrateurs, n’importe quel de ces administrateurs peut
+   gérer la perte du badge. c'est l'administrateur qui gère les problèmes des
+   pertes /vols de badges
+#. Le stade ne possède aucun équipement
+#. Le nombre des équipements nécessaires a été déterminé par Batemis
+#. Seul le serveur applicatif est connecté aux Internets car il gère les webservices
+#. Le système doit fournir une [API] (web service) permettant à des acteurs
+   extérieurs d'ajouter des règles dans le système
+#. Le [système] doit pouvoir permettre de garder des traces d'accès
+#. Une information reçu par le serveur est toujours identique selon le type d'identification utilisé.
+#. Les différents incidents doivent être localisé selon des zones, derniers points d'accès
+#. Le système doit définir les [autorisation] selon un [groupe], une période et une [zone]
+#. d'accès | Les accès seront mémorisé par le système
+#. CyberBatiment | On utilise un web service sécurisé pour la transmission des informations entre ces deux systèmes
+#. Transmission Données | Gestion en temps réel des matériels pour authentification
+#. Plusieurs groupes de [Badgeurs] autorisées devront être définis
+   ainsi que leurs [Autorisations].
+#. Les accès seront limité dans le temps (de 8h à 17h)#.
+#. Un [bissas] devra garder en mémoire le nombre de personne par zone afin de
+   ne pas dépasser la capacité limite.
+#. Dans les autres zones, un incident système peut se déclencher.
+#. Ils peuvent ainsi contrôler à la fois l’entrée et la sortie.
+#. Un spectateur possède un billet papier. Il ne peut accéder qu'à la
+   tribune correspondant à son billet pendant la période correspondante à l'épreuve.
+#. Un athlète peut accéder au village sportif, au restaurant, et à son
+   bâtiment. Il peut également aller en salle de presse et à l’administration de
+   8h à 17h. L’accès au sous-sol sportif et à l’arène lui est autorisé
+   seulement si une épreuve de sa discipline est en cours.
+#. Les gardiens pourront débloquer l'accès ou la sortie d'une
+   personne depuis leur smartphone.
+#. Les gardiens peuvent utiliser la fonction téléphone de leur Smartphone pour appeler
+   les services compétents (urgences, police, armée, etc.)
+#. Les incidents doivent être localisés (e.g. [Bissas], point d’accès et/ou zone).
+#. incident incendie: les incidents métaux détectés sont différents des incidents
+   d'accès ce dont par exemple métaux détectés dans un bissas Xtra, incendie
+#. Prendre en compte les systèmes avec incendie : - pouvoir définir des zones
+   à IL -tout les points d'accès doivent être ouvert automatiquement vers l'extérieur
+   dans les zone IL - un incendie système est déclenché dans les autres zones
+#. L'[Administrateur] doit pouvoir editer les badges pour les
+   [Badgeurs]. Des empreintes digitales et portraits peuvent être associés sur
+   les badges hautes sécurités.
+#. Le matériel est suivi par des contrôles logiciels | Performance
+#. La puissance du serveur d'applications varie selon le volume de données à gérer et
+   le nombre de transaction à mettre en oeuvre
+#. La conservation de l’historique des événements étant imposée par la
+   réglementation du Vénézuela, il faudra garder ces informations :
+   un web service devra permettre à des systèmes externes d'importer
+   les événements d'accès.
+#. Le systeme doit a tout moment être capable de savoir qui est dans une [zone] - nécessaire entre
+   autre pour ne pas dépasser le nombre maximum de personnes autorisées par [zone]
+#. Les [bissas] contrôleront à la fois l’entrée et la sortie grace à ses deux faces.
+   Cela évitera le dépassement du nombre d'autorisations d'accès par [Zone].
+#. Chaque [Bissas] sera connecté au panneau de brassage du serveur de
+   contrôle par une connexion RFC 821, (RFC 321 ?)
+#. L'application va étre déployé sur des smartphones samsung de 5,5 pouces
+#. En situation de crise, le temps de réaction des gardiens peut
+   devenir essentiel.
+#. Les [bissas] sont extrêmement performant (à condition que les contrôles logiciels suivent)
+#. Lorsqu'un incident est révélé, il est pris un charge par un [gardien],
+   lorsque l'incident est pris en charge on lui change son état. En
+   fonction des cas, l'incident peut être pris en charge de différentes manières : - Le
+   [gardien] se rend sur le lieu, il décide d'ignorer ou de régler ou de commenter
+   l'incident. - Si l'incident est réglé, le [gardien] peut quand même commenter.
+   Il est important de noter qu'il existe plusieurs manières de gérer un incident
+#. Les données transmises entre différents logiciels se fera sous format XML
+#. forme des [billet]s papier | les badges papier seront sous forme de QR codes
+#. L’IHM des gardiens doit être particulièrement ergonomique vu
+   qu'ils l'utilisent intensivement
+#. Des [badges] seront fournis a différentes personne en fonction de leurs fonction
+   et de leur droit d'accet
+#. Pour la transmission par un logiciel à CyberBatiment des informations de gestion
+   d’un groupe, seules certaines informations seront nécessaires.
+#. Les informations transmisent à CyberBatiment doivent être en format XML.
+#. Les [billets] pour les [spectateurs] seront edité par un système en ligne
+#. toutes les fonctions du bissas seront implementé dans le serveur de controle.
+#. Le développement doit être généralisable. Il devra pouvoir s'adapter à toute sorte de systèmes.
+#. Afin que la connexion soit possible, il faut que le [client] ainsi que le
+   [superviseur] et/ou les [administrateurs] soient sur des PCs Windows avec un navigateur Chrome
+#. Si une [zone] est pleine, une alerte système est générée pour que qu’un affichage le signale
+   ou que les [gardiens] soient prévenus de venir expliquer la situation
+#. En fonction du type de bissas des niveaux de sécurité seront attribués.
+#. L'IHM des gardiens doit être ergonomique et soigné
+#. Batemis a décidé de se baser des bissas (sas à deux portes) | Fonctionnelle
+#. L'application devra proposer un historique d’accès pour les heures de présence des employés
+
+Lexique
+-------
+#. Groupes | Groupe : spectateur,sportifs,journaliste,administratifs,gardiens,superviseur
+   => Catégorie de personnes ayant le même objectif
+#. Alerte | Alerte système à destination d'un gardien en charge de la zone concerné.
+   Cette alerte indique précisément la localisation et la nature du problème
+#. Poste superviseur | Poste de gestion et de supervision des gardiens.
+#. Postes administrateurs | Poste de création et gestion des badges
+#. Bissas Xtra | Porte de sécurité étant très sécurisée
+#. Historique | Logs et traces d'utilisations des sas
+#. Etat de l'incident | Informations complémentaires concernant un incident survenu dans un sas
+#. Serveur de controle | Serveur regroupant les fonctionnalités accessible dans une zone
+#. Badge | N'importe quel type de document (papier, QRcode ..) servant à passer les bissas.
+#. Badge | Objet permettant l'identification automatique d'une personne dans un sas
+#. Autorisation | Habilité d'une personne ou un groupe de personne à entrer dans une zone
+#. Competis | Equipe de cadres expérimentes et complémentaire en vision compétitive, en conduite de projet,
+   en gestion de l'innovation et des technologies de l'Information.
+#. Chimiotis | Chimiotis, la société gérante désire s’équiper de bisass pour son système d’accès sécurisé.
+#. Bâtiment | Toute construction destinée à servir d'abrir et à isoler.
+#. Sites | Un site au sens [Batemis] est un lieu public ou privé avec un type donné.
+#. Sécuriser | Donner à quelque chose de la sécurité de la stabilité.
+#. piggybacking | Quand un utilisateur autorise (intentionnellement ou pas) d' autres utilisateurs à passer
+   par la porte sécurisée. Traduction farfelue mot à mot imaginatif "porter le cochon sur le dos" pour
+   le faire passer ni vu ni connu discrètement (porter sur le dos).
+#. Badgeur | Toute personne ayant un badge par un administrateur
+#. Badgeur | Personne accédant au bâtiment
+#. Smartphone | Dispositif permettant l'identification dans un sas
+#. Zone | Une zone est un endroit du batiment ayant une même fonction
+#. Sportif | Dans ce système, il s'agit d'une personne doué, parmis les meilleurs dans un sport en particulier
+#. Superviseur | Leader, manager d'un projet, évenement
+#. Course d'endurance, ou participe plusieurs [sportifs], avec un vainqueurs à la fin de celle-ci
+#. Autorisation | Une autorisation est un "laisser passer" définit pour un [groupe] durant une période défini
+#. Serveur de contrôl | L'ERP développé
+#. triplet | C'est de mentionner le groupe avec la zone concerné pour une periode donnée
+#. Système | L'ERP développé
+#. CyberBatiment | L'ERP développé
+#. Periode | Duré d'une [épreuve] des JO
+
+Questions et Hypothèses
+-----------------------
