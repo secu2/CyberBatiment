@@ -103,7 +103,7 @@ CR004
 #. Le badgeur sera alors bloqué dans le sas et devra attendre qu'un gardien vienne le débloquer.
 #. Une fois de plus Bissis propose le matériel pour permettre cela, mais les fonctions devront être réalisées sur le serveur de contrôle en fonction des informations émises par les bissas.
 #. Evidemment les digitCodes et faceCodes (transmis respectivement par le lecteur d'empreinte digitale et le lecteur facial), devront être comparés aux données disponibles sur le serveur applicatif.
-#. Dans CyberBatiment ce sont les administrateurs de groupes qui seront chargés, en plus de la délivrance des badges selon la procédure normalle, de collecter les empreintes digitales et les portraits des badgeurs haute sécurité.
+#. Dans CyberBatiment ce sont les administrateurs de groupes qui seront chargés, en plus de la délivrance des badges selon la procédure normale, de collecter les empreintes digitales et les portraits des badgeurs haute sécurité.
 #. L'identification physique des badgeurs dans un Xtra devra se faire en moins de 5 secondes.
 #. L'identification des badges et surtout le calcul des autorisations lors d'un passage de badge devra toujours pouvoir être faite en moins de 2 secondes.
 #. Sachant que l'on envisage plus de 200 entrées ou sorties simultanément un soin tout particulier devra être apporté à cet aspect.
